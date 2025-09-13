@@ -338,7 +338,7 @@ export default function Home() {
                   Our Flagship
                 </Badge>
                 <CardContent className="p-8 space-y-6">
-                  <div className="w-20 h-20 bg-primary/10 rounded-xl flex items-center justify-center text-3xl">
+                  <div className="w-20 h-20 bg-primary/10 rounded-xl mx-auto flex items-center justify-center text-3xl">
                     🤖
                   </div>
                   <div>
@@ -359,7 +359,7 @@ export default function Home() {
               {/* Design Panda */}
               <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary/50">
                 <CardContent className="p-8 space-y-6">
-                  <div className="w-20 h-20 bg-primary/10 rounded-xl flex items-center justify-center text-3xl">
+                  <div className="w-20 h-20 bg-primary/10 rounded-xl mx-auto flex items-center justify-center text-3xl">
                     🎨
                   </div>
                   <div>
@@ -380,7 +380,7 @@ export default function Home() {
               {/* Video Panda */}
               <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary/50">
                 <CardContent className="p-8 space-y-6">
-                  <div className="w-20 h-20 bg-primary/10 rounded-xl flex items-center justify-center text-3xl">
+                  <div className="w-20 h-20 bg-primary/10 rounded-xl mx-auto flex items-center justify-center text-3xl">
                     🎬
                   </div>
                   <div>
