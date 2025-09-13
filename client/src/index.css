@@ -202,14 +202,18 @@ html {
 /* Apply to all CTA buttons site-wide */
 .cta-button, .btn-primary {
   padding: 16px 32px;
-  margin: 24px auto;
   border-radius: 8px;
   font-weight: 600;
   font-size: 1.1rem;
   min-height: 44px;
+  text-align: center;
+}
+
+/* Centered standalone CTAs with width constraint */
+.cta-button--centered {
+  margin: 24px auto;
   display: block;
   max-width: 300px;
-  text-align: center;
 }
 
 /* Spacing above and below CTA buttons */
@@ -230,6 +234,12 @@ p + .cta-button,
   gap: 1rem;
   justify-content: center;
   margin: 2rem 0;
+}
+
+/* Prevent margin stacking in grouped CTAs */
+.cta-group .cta-button {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* ============================================================================ */

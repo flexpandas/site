@@ -173,7 +173,7 @@ export default function Contact() {
                   
                   <Button 
                     variant="outline" 
-                    className="w-full mt-6 border-border text-foreground hover:bg-muted transition-colors"
+                    className="cta-button w-full border-border text-foreground hover:bg-muted transition-colors"
                     data-testid="button-download-resources"
                   >
                     Download Free Resources

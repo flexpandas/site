@@ -588,7 +588,7 @@ export default function Pricing() {
                 <Link href="/contact">
                   <Button 
                     size="lg" 
-                    className="cta-button btn-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
+                    className="cta-button cta-button--centered btn-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
                     data-testid="button-pricing-cta"
                   >
                     Book My Free Audit

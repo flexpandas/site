@@ -94,7 +94,7 @@ export default function About() {
                 <Link href="/contact">
                   <Button 
                     size="lg" 
-                    className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 text-lg px-8 py-4"
+                    className="cta-button cta-button--centered btn-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
                     data-testid="button-about-cta"
                   >
                     Book a Free Audit
