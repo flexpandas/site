@@ -222,10 +222,18 @@ html {
   margin-bottom: 2rem;
 }
 
-/* When CTAs appear after text blocks */
+/* When CTAs appear after text blocks - increased spacing */
 p + .cta-button,
 .text-content + .cta-button {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
+}
+
+/* Additional spacing for CTAs after any text element */
+h1 + .cta-button,
+h2 + .cta-button,
+h3 + .cta-button,
+div > p + .cta-button {
+  margin-top: 4rem;
 }
 
 /* When multiple CTAs are grouped */
@@ -303,6 +311,10 @@ p + .cta-button,
 
 .panda-option-text {
   flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
 }
 
 .panda-option-title {
@@ -311,6 +323,10 @@ p + .cta-button,
   color: #111827;
   margin-bottom: 0.5rem;
   line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
 }
 
 .panda-option-cta {
@@ -320,6 +336,9 @@ p + .cta-button,
   text-decoration: none;
   margin-top: 0.5rem;
   display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
 }
 
 /* ============================================================================ */
