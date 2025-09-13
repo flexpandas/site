@@ -1,7 +1,7 @@
-import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
+import CalendarBooking from "@/components/CalendarBooking";
 import SEOHead from "@/components/SEOHead";
 
 export default function Contact() {
@@ -52,12 +52,7 @@ export default function Contact() {
                     </ul>
                   </div>
                   
-                  <Button 
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors py-4 text-lg font-semibold"
-                    data-testid="button-book-audit"
-                  >
-                    Book Free Audit Call
-                  </Button>
+                  <CalendarBooking />
                 </CardContent>
               </Card>
 
