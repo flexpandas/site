@@ -1,7 +1,9 @@
-import { MailService } from '@sendgrid/mail';
+// Using SendGrid's v3 Node.js Library - following official docs
+// https://github.com/sendgrid/sendgrid-nodejs
+import sgMail from '@sendgrid/mail';
 
 // Initialize mail service only when needed
-let mailService: MailService | null = null;
+let isInitialized = false;
 
 function initializeMailService(): boolean {
   if (!process.env.SENDGRID_API_KEY) {
@@ -9,9 +11,9 @@ function initializeMailService(): boolean {
     return false;
   }
   
-  if (!mailService) {
-    mailService = new MailService();
-    mailService.setApiKey(process.env.SENDGRID_API_KEY);
+  if (!isInitialized) {
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+    isInitialized = true;
   }
   return true;
 }
@@ -62,7 +64,7 @@ export async function sendEmail(params: EmailParams): Promise<boolean> {
       emailData.html = params.html;
     }
 
-    await mailService!.send(emailData);
+    await sgMail.send(emailData);
     return true;
   } catch (error: any) {
     console.error('SendGrid email error:', {
