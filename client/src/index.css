@@ -199,22 +199,48 @@ html {
 /* GLOBAL CTA BUTTON SPACING STANDARDS - SYSTEMATIC SPACING FIX */
 /* ============================================================================ */
 
-/* Apply to all CTA buttons site-wide */
-.cta-button, .btn-primary {
-  padding: 16px 32px;
-  border-radius: 8px;
-  font-weight: 600;
-  font-size: 1.1rem;
-  min-height: 44px;
-  text-align: center;
+/* Apply to all CTA buttons site-wide - FORCE OVERRIDE shadcn styles */
+.cta-button, .btn-primary, button.cta-button, a > button.cta-button, 
+button[data-testid*="button-"], [class*="button"] {
+  padding: 16px 32px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  min-height: 44px !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: inline-flex !important;
+  white-space: normal !important;
+}
+
+/* MAXIMUM SPECIFICITY - Force all buttons to center */
+button, .btn, [class*="button"], 
+.inline-flex.items-center.justify-center,
+button[class*="bg-primary"] {
+  text-align: center !important;
   justify-content: center !important;
   align-items: center !important;
   display: inline-flex !important;
 }
 
-/* Ensure all button elements have centered text */
-button {
+/* PRICING CARD CENTERING - Maximum specificity */
+.pricing-card-header, 
+div.pricing-card-header,
+.pricing-card-header > *,
+.pricing-card-header h3,
+.pricing-card-header div {
   text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* PRICING SECTION ICONS - Force centering */
+.pricing-section-icon,
+div.pricing-section-icon {
+  text-align: center !important;
+  display: flex !important;
   justify-content: center !important;
   align-items: center !important;
 }
