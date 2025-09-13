@@ -40,11 +40,11 @@ export default function Home() {
               </p>
             </div>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="cta-group">
               <Link href="/contact">
                 <Button 
                   size="lg" 
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 button-bounce pulse-glow text-lg px-8 py-4 font-semibold shadow-lg"
+                  className="cta-button btn-primary bg-primary text-primary-foreground hover:bg-primary/90 button-bounce pulse-glow"
                   data-testid="button-hero-book-audit"
                 >
                   📞 Get My Free 20-Hour Savings Plan
@@ -54,7 +54,7 @@ export default function Home() {
                 variant="outline" 
                 size="lg" 
                 onClick={() => scrollToSection('how-it-works')}
-                className="border-border text-foreground hover:bg-muted hover-lift text-lg px-8 py-4"
+                className="cta-button border-border text-foreground hover:bg-muted hover-lift"
                 data-testid="button-hero-see-how"
               >
                 ⚡ See The Magic In Action
@@ -399,13 +399,13 @@ export default function Home() {
               </Card>
             </div>
             
-            <div className="space-y-4">
+            <div className="text-content space-y-4">
               <p className="text-lg font-semibold text-foreground">Ready to Save 20+ Hours Monthly?</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="cta-group">
                 <Link href="/contact">
                   <Button 
                     size="lg" 
-                    className="bg-primary text-primary-foreground hover:bg-primary/90 button-bounce text-lg px-8 py-4 shadow-lg font-semibold"
+                    className="cta-button btn-primary bg-primary text-primary-foreground hover:bg-primary/90 button-bounce"
                     data-testid="button-services-free-audit"
                   >
                     🚀 Start Saving Time Now
@@ -415,7 +415,7 @@ export default function Home() {
                   <Button 
                     variant="outline"
                     size="lg" 
-                    className="border-border text-foreground hover:bg-muted hover-lift text-lg px-8 py-4"
+                    className="cta-button border-border text-foreground hover:bg-muted hover-lift"
                     data-testid="button-services-pricing"
                   >
                     💰 View Panda Pricing

@@ -96,7 +96,7 @@ export default function Pricing() {
                     
                     <Link href="/contact?plan=automation-starter">
                       <Button 
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        className="cta-button btn-primary w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
                         data-testid="button-automation-starter"
                       >
                         Start My Quick Wins
@@ -149,7 +149,7 @@ export default function Pricing() {
                     
                     <Link href="/contact?plan=automation-core">
                       <Button 
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        className="cta-button btn-primary w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
                         data-testid="button-automation-core"
                       >
                         Build My Growth Engine
@@ -202,7 +202,7 @@ export default function Pricing() {
                     
                     <Link href="/contact?plan=automation-scale">
                       <Button 
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        className="cta-button btn-primary w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
                         data-testid="button-automation-scale"
                       >
                         Build My Ops System
@@ -260,7 +260,7 @@ export default function Pricing() {
                     <Link href="/contact?plan=design-starter">
                       <Button 
                         variant="outline" 
-                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        className="cta-button w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
                         data-testid="button-design-starter"
                       >
                         Start Design Starter
@@ -308,7 +308,7 @@ export default function Pricing() {
                     
                     <Link href="/contact?plan=design-pro">
                       <Button 
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        className="cta-button btn-primary w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
                         data-testid="button-design-pro"
                       >
                         Start Design Pro
@@ -353,7 +353,7 @@ export default function Pricing() {
                     <Link href="/contact?plan=design-scale">
                       <Button 
                         variant="outline" 
-                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        className="cta-button w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
                         data-testid="button-design-scale"
                       >
                         Start Design Scale
@@ -403,7 +403,7 @@ export default function Pricing() {
                     <Link href="/contact?plan=video-starter">
                       <Button 
                         variant="outline" 
-                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        className="cta-button w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
                         data-testid="button-video-starter"
                       >
                         Start Video Starter
@@ -447,7 +447,7 @@ export default function Pricing() {
                     
                     <Link href="/contact?plan=video-pro">
                       <Button 
-                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        className="cta-button btn-primary w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
                         data-testid="button-video-pro"
                       >
                         Start Video Pro
@@ -488,7 +488,7 @@ export default function Pricing() {
                     <Link href="/contact?plan=video-scale">
                       <Button 
                         variant="outline" 
-                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        className="cta-button w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
                         data-testid="button-video-scale"
                       >
                         Start Video Scale
@@ -588,7 +588,7 @@ export default function Pricing() {
                 <Link href="/contact">
                   <Button 
                     size="lg" 
-                    className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 text-lg px-8 py-4"
+                    className="cta-button btn-primary bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
                     data-testid="button-pricing-cta"
                   >
                     Book My Free Audit
