@@ -1,3 +1,4 @@
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
@@ -17,9 +18,9 @@ export default function Contact() {
         <div className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center space-y-8 mb-16">
-            <h1 className="text-4xl sm:text-5xl font-bold text-foreground" data-testid="contact-title">Get In Touch</h1>
+            <h1 className="text-4xl sm:text-5xl font-bold text-foreground" data-testid="contact-title">Ready to Meet Your Pandas? 🐼</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto" data-testid="contact-subtitle">
-              Ready to save 20+ hours every month? Let's talk about how Flexpandas can transform your business operations.
+              Ready to save 20+ hours every month? Let's talk about how your panda team can transform your business operations.
             </p>
           </div>
 
@@ -56,56 +57,78 @@ export default function Contact() {
                 </CardContent>
               </Card>
 
-              {/* Quick Start Section */}
-              <Card className="hover:shadow-lg transition-shadow">
+              {/* Which Panda Section */}
+              <Card className="hover:shadow-lg transition-shadow border-primary/20">
                 <CardContent className="p-8">
-                  <h2 className="text-2xl font-bold text-foreground mb-6" data-testid="quick-start-title">Not Sure Where to Start?</h2>
-                  <p className="text-muted-foreground mb-6">Choose your biggest pain point:</p>
+                  <h2 className="text-2xl font-bold text-foreground mb-6" data-testid="which-panda-title">
+                    Which Panda Do You Need? 🤔
+                  </h2>
+                  <p className="text-muted-foreground mb-6">Choose your biggest challenge and we'll recommend the right panda:</p>
                   
                   <div className="space-y-4">
-                    <Button 
-                      variant="ghost"
-                      className="w-full text-left p-4 bg-muted/50 hover:bg-muted h-auto justify-start"
-                      data-testid="quick-start-leads"
-                    >
-                      <div className="space-y-2">
-                        <h3 className="font-semibold text-foreground">"I'm losing leads"</h3>
-                        <p className="text-sm text-muted-foreground">→ Book automation audit</p>
-                      </div>
-                    </Button>
+                    <Link href="/contact?service=automation">
+                      <Button 
+                        variant="ghost"
+                        className="w-full text-left p-4 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option"
+                        data-testid="panda-automation"
+                      >
+                        <div className="flex items-start space-x-3 w-full">
+                          <span className="text-2xl">🤖</span>
+                          <div className="space-y-2 flex-1">
+                            <h3 className="font-semibold text-foreground">"I'm losing leads and wasting time on repetitive tasks"</h3>
+                            <p className="text-sm text-primary font-medium">→ Meet Automation Panda (Book free audit)</p>
+                          </div>
+                        </div>
+                      </Button>
+                    </Link>
                     
-                    <Button 
-                      variant="ghost"
-                      className="w-full text-left p-4 bg-muted/50 hover:bg-muted h-auto justify-start"
-                      data-testid="quick-start-design"
-                    >
-                      <div className="space-y-2">
-                        <h3 className="font-semibold text-foreground">"I need consistent design work"</h3>
-                        <p className="text-sm text-muted-foreground">→ Start with Design Starter (€700/month)</p>
-                      </div>
-                    </Button>
+                    <Link href="/contact?service=design">
+                      <Button 
+                        variant="ghost"
+                        className="w-full text-left p-4 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option"
+                        data-testid="panda-design"
+                      >
+                        <div className="flex items-start space-x-3 w-full">
+                          <span className="text-2xl">🎨</span>
+                          <div className="space-y-2 flex-1">
+                            <h3 className="font-semibold text-foreground">"I need consistent design work but can't afford a full-time designer"</h3>
+                            <p className="text-sm text-primary font-medium">→ Meet Design Panda (Start at €700/month)</p>
+                          </div>
+                        </div>
+                      </Button>
+                    </Link>
                     
-                    <Button 
-                      variant="ghost"
-                      className="w-full text-left p-4 bg-muted/50 hover:bg-muted h-auto justify-start"
-                      data-testid="quick-start-video"
-                    >
-                      <div className="space-y-2">
-                        <h3 className="font-semibold text-foreground">"I need video content regularly"</h3>
-                        <p className="text-sm text-muted-foreground">→ Start with Video Starter (€600/month)</p>
-                      </div>
-                    </Button>
+                    <Link href="/contact?service=video">
+                      <Button 
+                        variant="ghost"
+                        className="w-full text-left p-4 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option"
+                        data-testid="panda-video"
+                      >
+                        <div className="flex items-start space-x-3 w-full">
+                          <span className="text-2xl">🎬</span>
+                          <div className="space-y-2 flex-1">
+                            <h3 className="font-semibold text-foreground">"I want to create more video content but editing takes forever"</h3>
+                            <p className="text-sm text-primary font-medium">→ Meet Video Panda (Start at €600/month)</p>
+                          </div>
+                        </div>
+                      </Button>
+                    </Link>
                     
-                    <Button 
-                      variant="ghost"
-                      className="w-full text-left p-4 bg-muted/50 hover:bg-muted h-auto justify-start"
-                      data-testid="quick-start-unsure"
-                    >
-                      <div className="space-y-2">
-                        <h3 className="font-semibold text-foreground">"I'm not sure what I need"</h3>
-                        <p className="text-sm text-muted-foreground">→ Book free 15-min chat</p>
-                      </div>
-                    </Button>
+                    <Link href="/contact?service=consultation">
+                      <Button 
+                        variant="ghost"
+                        className="w-full text-left p-4 bg-muted/50 hover:bg-muted border border-muted-foreground/20 h-auto justify-start panda-option"
+                        data-testid="panda-unsure"
+                      >
+                        <div className="flex items-start space-x-3 w-full">
+                          <span className="text-2xl">🐼</span>
+                          <div className="space-y-2 flex-1">
+                            <h3 className="font-semibold text-foreground">"I'm not sure which panda team I need"</h3>
+                            <p className="text-sm text-muted-foreground">→ Book a free 15-min discovery call</p>
+                          </div>
+                        </div>
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>

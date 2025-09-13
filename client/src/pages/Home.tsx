@@ -44,21 +44,36 @@ export default function Home() {
               <Link href="/contact">
                 <Button 
                   size="lg" 
-                  className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 text-lg px-8 py-4"
+                  className="bg-primary text-primary-foreground hover:bg-primary/90 button-bounce pulse-glow text-lg px-8 py-4 font-semibold shadow-lg"
                   data-testid="button-hero-book-audit"
                 >
-                  Book a Free Audit
+                  📞 Get My Free 20-Hour Savings Plan
                 </Button>
               </Link>
               <Button 
                 variant="outline" 
                 size="lg" 
                 onClick={() => scrollToSection('how-it-works')}
-                className="border-border text-foreground hover:bg-muted transition-colors text-lg px-8 py-4"
+                className="border-border text-foreground hover:bg-muted hover-lift text-lg px-8 py-4"
                 data-testid="button-hero-see-how"
               >
-                See How It Works
+                ⚡ See The Magic In Action
               </Button>
+            </div>
+            
+            <div className="flex items-center justify-center space-x-6 text-sm text-muted-foreground">
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-clock text-primary"></i>
+                <span>15-min friendly call</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-gift text-primary"></i>
+                <span>No sales pitch</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-chart-line text-primary"></i>
+                <span>Get 2-3 specific ideas</span>
+              </div>
             </div>
             
             <div className="pt-8">
@@ -70,6 +85,126 @@ export default function Home() {
                   </div>
                   <h3 className="text-xl font-semibold" data-testid="hero-video-title">Workflow Demo Video</h3>
                   <p className="text-muted-foreground" data-testid="hero-video-description">See how we automate your business processes in real-time</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials - Immediate Social Proof */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center space-y-8">
+            <h2 className="text-2xl sm:text-3xl font-bold text-foreground">
+              Join 200+ businesses saving 20+ hours monthly
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+              <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 testimonial-hover">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center space-x-1">
+                    {[1,2,3,4,5].map((star) => (
+                      <i key={star} className="fas fa-star text-yellow-400 text-sm"></i>
+                    ))}
+                  </div>
+                  <p className="text-foreground font-medium italic" data-testid="testimonial-hero-1">
+                    "Flexpandas automated our lead flow and follow-ups — we saved 22 hours/month and closed 35% more deals."
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-bold text-sm">SM</span>
+                    </div>
+                    <div className="text-sm">
+                      <div className="font-semibold text-foreground">Sarah Mitchell</div>
+                      <div className="text-muted-foreground">Marketing Agency Owner</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 testimonial-hover">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center space-x-1">
+                    {[1,2,3,4,5].map((star) => (
+                      <i key={star} className="fas fa-star text-yellow-400 text-sm"></i>
+                    ))}
+                  </div>
+                  <p className="text-foreground font-medium italic" data-testid="testimonial-hero-2">
+                    "Instead of hiring in-house designers, we get unlimited creative assets for a fixed monthly budget. Game changer!"
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-bold text-sm">MT</span>
+                    </div>
+                    <div className="text-sm">
+                      <div className="font-semibold text-foreground">Mike Thompson</div>
+                      <div className="text-muted-foreground">E-commerce Founder</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+              
+              <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 testimonial-hover">
+                <CardContent className="p-6 space-y-4">
+                  <div className="flex items-center space-x-1">
+                    {[1,2,3,4,5].map((star) => (
+                      <i key={star} className="fas fa-star text-yellow-400 text-sm"></i>
+                    ))}
+                  </div>
+                  <p className="text-foreground font-medium italic" data-testid="testimonial-hero-3">
+                    "Video Panda helped us scale from 2 videos/week to 15. Our engagement tripled and we hit 100K followers!"
+                  </p>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 bg-primary/20 rounded-full flex items-center justify-center">
+                      <span className="text-primary font-bold text-sm">LC</span>
+                    </div>
+                    <div className="text-sm">
+                      <div className="font-semibold text-foreground">Lisa Chen</div>
+                      <div className="text-muted-foreground">Content Creator</div>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+            
+            <div className="flex items-center justify-center space-x-6 pt-4">
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-shield-alt text-primary"></i>
+                <span className="text-sm text-muted-foreground">100% Secure</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-clock text-primary"></i>
+                <span className="text-sm text-muted-foreground">Setup in 48h</span>
+              </div>
+              <div className="flex items-center space-x-2">
+                <i className="fas fa-money-bill-wave text-primary"></i>
+                <span className="text-sm text-muted-foreground">No hidden fees</span>
+              </div>
+            </div>
+            
+            {/* Social Proof CTA */}
+            <div className="pt-12">
+              <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-2xl p-8 max-w-4xl mx-auto">
+                <div className="text-center space-y-6">
+                  <h3 className="text-2xl font-bold text-foreground">
+                    Want Results Like These? 🎯
+                  </h3>
+                  <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                    Join 200+ businesses already saving time and increasing revenue with our pandas. Book your free strategy call and get your personalized 20-hour savings plan.
+                  </p>
+                  <Link href="/contact">
+                    <Button 
+                      size="lg" 
+                      className="bg-primary text-primary-foreground hover:bg-primary/90 button-bounce pulse-glow text-lg px-10 py-4 font-semibold shadow-xl"
+                      data-testid="button-testimonials-cta"
+                    >
+                      🎁 Claim My Free Savings Plan
+                    </Button>
+                  </Link>
+                  <p className="text-sm text-muted-foreground">
+                    ⚡ Get specific automation ideas in just 15 minutes • No commitments required
+                  </p>
                 </div>
               </div>
             </div>
@@ -183,88 +318,111 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Services Overview */}
+      {/* Services Overview - Panda Team */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           <div className="text-center space-y-12">
-            <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
-              Our Services
-            </h2>
+            <div className="space-y-4">
+              <h2 className="text-3xl sm:text-4xl font-bold text-foreground">
+                Meet Your Panda Team 🐼
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                Choose the pandas that fit your business needs. They work together seamlessly or independently — whatever helps you grow faster.
+              </p>
+            </div>
             
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-              {/* Automation & AI */}
-              <Card className="relative overflow-hidden hover:shadow-xl transition-shadow">
-                <Badge className="absolute top-4 right-4 bg-primary/10 text-primary hover:bg-primary/20">
-                  Flagship
+              {/* Automation Panda */}
+              <Card className="relative overflow-hidden hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary/50">
+                <Badge className="absolute top-4 right-4 bg-primary text-primary-foreground font-semibold">
+                  Our Flagship
                 </Badge>
                 <CardContent className="p-8 space-y-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <i className="fas fa-robot text-2xl text-primary"></i>
+                  <div className="w-20 h-20 bg-primary/10 rounded-xl flex items-center justify-center text-3xl">
+                    🤖
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3" data-testid="service-automation-title">Automation & AI</h3>
-                    <ul className="space-y-2 text-muted-foreground" data-testid="service-automation-features">
-                      <li>• Workflow automation (CRM, lead routing, email, onboarding)</li>
-                      <li>• AI chatbots for lead qualification & FAQs</li>
-                      <li>• KPI dashboards & reporting</li>
+                    <h3 className="text-2xl font-bold text-foreground mb-4" data-testid="service-automation-panda-title">Automation Panda</h3>
+                    <p className="text-muted-foreground mb-4 font-medium">Your tireless automation expert that never sleeps, never forgets, and saves you 20+ hours monthly.</p>
+                    <ul className="space-y-3 text-muted-foreground" data-testid="service-automation-panda-features">
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Workflow automation (CRM, lead routing, email, onboarding)</span></li>
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>AI chatbots for lead qualification & FAQs</span></li>
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>KPI dashboards & reporting</span></li>
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-semibold text-foreground" data-testid="service-automation-price">Projects from €1,500</p>
+                    <p className="text-xl font-bold text-foreground" data-testid="service-automation-panda-price">Projects from €1,500</p>
                   </div>
                 </CardContent>
               </Card>
               
-              {/* Design Subscription */}
-              <Card className="hover:shadow-xl transition-shadow">
+              {/* Design Panda */}
+              <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary/50">
                 <CardContent className="p-8 space-y-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <i className="fas fa-palette text-2xl text-primary"></i>
+                  <div className="w-20 h-20 bg-primary/10 rounded-xl flex items-center justify-center text-3xl">
+                    🎨
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3" data-testid="service-design-title">Design-as-a-Subscription</h3>
-                    <ul className="space-y-2 text-muted-foreground" data-testid="service-design-features">
-                      <li>• Unlimited design requests each month</li>
-                      <li>• Logos, social posts, landing pages, app/UI</li>
-                      <li>• Flat monthly fee, no surprises</li>
+                    <h3 className="text-2xl font-bold text-foreground mb-4" data-testid="service-design-panda-title">Design Panda</h3>
+                    <p className="text-muted-foreground mb-4 font-medium">Your creative companion delivering unlimited design requests on subscription.</p>
+                    <ul className="space-y-3 text-muted-foreground" data-testid="service-design-panda-features">
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Unlimited design requests each month</span></li>
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Logos, social posts, landing pages, app/UI</span></li>
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Flat monthly fee, no surprises</span></li>
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-semibold text-foreground" data-testid="service-design-price">From €700/month</p>
+                    <p className="text-xl font-bold text-foreground" data-testid="service-design-panda-price">From €700/month</p>
                   </div>
                 </CardContent>
               </Card>
               
-              {/* Video Editing */}
-              <Card className="hover:shadow-xl transition-shadow">
+              {/* Video Panda */}
+              <Card className="hover:shadow-xl transition-all duration-300 hover:scale-105 border-2 hover:border-primary/50">
                 <CardContent className="p-8 space-y-6">
-                  <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center">
-                    <i className="fas fa-video text-2xl text-primary"></i>
+                  <div className="w-20 h-20 bg-primary/10 rounded-xl flex items-center justify-center text-3xl">
+                    🎬
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-foreground mb-3" data-testid="service-video-title">Video Editing-as-a-Subscription</h3>
-                    <ul className="space-y-2 text-muted-foreground" data-testid="service-video-features">
-                      <li>• Short-form (Reels/TikTok/YouTube Shorts)</li>
-                      <li>• Long-form edits with captions & thumbnails</li>
-                      <li>• Perfect for creators & brands scaling content</li>
+                    <h3 className="text-2xl font-bold text-foreground mb-4" data-testid="service-video-panda-title">Video Panda</h3>
+                    <p className="text-muted-foreground mb-4 font-medium">Your content creation partner scaling your video output without the editing headaches.</p>
+                    <ul className="space-y-3 text-muted-foreground" data-testid="service-video-panda-features">
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Short-form (Reels/TikTok/YouTube Shorts)</span></li>
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Long-form edits with captions & thumbnails</span></li>
+                      <li className="flex items-start space-x-2"><span className="text-primary font-bold">•</span><span>Perfect for creators & brands scaling content</span></li>
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-lg font-semibold text-foreground" data-testid="service-video-price">From €600/month</p>
+                    <p className="text-xl font-bold text-foreground" data-testid="service-video-panda-price">From €600/month</p>
                   </div>
                 </CardContent>
               </Card>
             </div>
             
-            <Link href="/pricing">
-              <Button 
-                size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 text-lg px-8 py-4"
-                data-testid="button-services-pricing"
-              >
-                See Packages & Pricing
-              </Button>
-            </Link>
+            <div className="space-y-4">
+              <p className="text-lg font-semibold text-foreground">Ready to Save 20+ Hours Monthly?</p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Link href="/contact">
+                  <Button 
+                    size="lg" 
+                    className="bg-primary text-primary-foreground hover:bg-primary/90 button-bounce text-lg px-8 py-4 shadow-lg font-semibold"
+                    data-testid="button-services-free-audit"
+                  >
+                    🚀 Start Saving Time Now
+                  </Button>
+                </Link>
+                <Link href="/pricing">
+                  <Button 
+                    variant="outline"
+                    size="lg" 
+                    className="border-border text-foreground hover:bg-muted hover-lift text-lg px-8 py-4"
+                    data-testid="button-services-pricing"
+                  >
+                    💰 View Panda Pricing
+                  </Button>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </section>

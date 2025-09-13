@@ -10,7 +10,7 @@ export default function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "/", label: "Services" },
+    { href: "/", label: "Meet the Pandas" },
     { href: "/pricing", label: "Pricing" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
@@ -23,7 +23,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm border-b border-border z-50">
+    <nav className="fixed top-0 w-full bg-background/98 backdrop-blur-md border-b border-border z-50 shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
@@ -50,10 +50,11 @@ export default function Navigation() {
           
           <Link href="/contact">
             <Button 
-              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105"
+              size="sm"
+              className="hidden md:inline-flex bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 shadow-lg font-semibold px-6 py-2 pulse-glow"
               data-testid="button-book-audit"
             >
-              Book Free Audit
+              📞 Book Free Audit
             </Button>
           </Link>
           
@@ -82,10 +83,10 @@ export default function Navigation() {
                 ))}
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
                   <Button 
-                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90"
+                    className="w-full bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg font-semibold py-3"
                     data-testid="mobile-button-book-audit"
                   >
-                    Book Free Audit
+                    📞 Book Free Audit
                   </Button>
                 </Link>
               </div>

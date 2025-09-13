@@ -27,11 +27,16 @@ export default function Pricing() {
           {/* Header */}
           <div className="text-center space-y-8 mb-16">
             <h1 className="text-4xl sm:text-5xl font-bold text-foreground">
-              Simple, transparent pricing
+              Meet Your Panda Team 🐼
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              No hidden fees. No long contracts. Just clear packages that save you time and help you grow.
+              Choose the pandas that fit your business needs. They work together seamlessly or independently — whatever helps you grow faster.
             </p>
+            <div className="bg-primary/5 rounded-2xl p-8 max-w-4xl mx-auto">
+              <p className="text-lg font-medium text-foreground">
+                <span className="text-primary font-bold">No hidden fees.</span> <span className="text-primary font-bold">No long contracts.</span> Just clear packages that save you time and help you scale.
+              </p>
+            </div>
             
             {/* Tool logos strip */}
             <div className="flex flex-wrap justify-center items-center gap-8 pt-8" data-testid="tool-logos">
@@ -46,13 +51,17 @@ export default function Pricing() {
           {/* Automation Packages */}
           <div className="space-y-16">
             <div className="space-y-8">
-              <div className="text-center">
-                <h2 className="text-3xl font-bold text-foreground mb-4">Automation & AI — Build once, save forever</h2>
+              <div className="text-center space-y-4">
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="text-4xl">🤖</span>
+                  <h2 className="text-3xl font-bold text-foreground">Automation Panda Packages</h2>
+                </div>
+                <p className="text-lg text-muted-foreground">Build once, save forever — your tireless automation expert</p>
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
                 {/* Starter */}
-                <Card className="hover:shadow-xl transition-shadow">
+                <Card className="hover:shadow-xl transition-shadow card-hover">
                   <CardContent className="p-8 space-y-6">
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-starter-title">Starter</h3>
@@ -85,17 +94,19 @@ export default function Pricing() {
                       <p className="text-muted-foreground">Timeline: 2 weeks</p>
                     </div>
                     
-                    <Button 
-                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                      data-testid="button-automation-starter"
-                    >
-                      Start My Quick Wins
-                    </Button>
+                    <Link href="/contact?plan=automation-starter">
+                      <Button 
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        data-testid="button-automation-starter"
+                      >
+                        Start My Quick Wins
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
                 
                 {/* Core (Most Popular) */}
-                <Card className="relative border-2 border-primary hover:shadow-xl transition-shadow">
+                <Card className="relative border-2 border-primary hover:shadow-xl transition-shadow card-hover hover-glow">
                   <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-primary text-primary-foreground">
                     Most Popular
                   </Badge>
@@ -136,17 +147,19 @@ export default function Pricing() {
                       <p className="text-muted-foreground">Timeline: 4 weeks</p>
                     </div>
                     
-                    <Button 
-                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                      data-testid="button-automation-core"
-                    >
-                      Build My Growth Engine
-                    </Button>
+                    <Link href="/contact?plan=automation-core">
+                      <Button 
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        data-testid="button-automation-core"
+                      >
+                        Build My Growth Engine
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
                 
                 {/* Scale */}
-                <Card className="hover:shadow-xl transition-shadow">
+                <Card className="hover:shadow-xl transition-shadow card-hover">
                   <CardContent className="p-8 space-y-6">
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-scale-title">Scale</h3>
@@ -187,12 +200,14 @@ export default function Pricing() {
                       <p className="text-muted-foreground">Timeline: 6–8 weeks</p>
                     </div>
                     
-                    <Button 
-                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                      data-testid="button-automation-scale"
-                    >
-                      Build My Ops System
-                    </Button>
+                    <Link href="/contact?plan=automation-scale">
+                      <Button 
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        data-testid="button-automation-scale"
+                      >
+                        Build My Ops System
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
@@ -204,8 +219,12 @@ export default function Pricing() {
 
             {/* Design Subscriptions */}
             <div className="space-y-8">
-              <div className="text-center">
-                <h2 className="text-3xl font-bold text-foreground mb-4">On-demand design, whenever you need it</h2>
+              <div className="text-center space-y-4">
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="text-4xl">🎨</span>
+                  <h2 className="text-3xl font-bold text-foreground">Design Panda Subscriptions</h2>
+                </div>
+                <p className="text-lg text-muted-foreground">Unlimited creative assets on subscription — your design companion</p>
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -238,13 +257,15 @@ export default function Pricing() {
                       </li>
                     </ul>
                     
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-border text-foreground hover:bg-muted transition-colors"
-                      data-testid="button-design-starter"
-                    >
-                      Start Design Starter
-                    </Button>
+                    <Link href="/contact?plan=design-starter">
+                      <Button 
+                        variant="outline" 
+                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        data-testid="button-design-starter"
+                      >
+                        Start Design Starter
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
                 
@@ -285,12 +306,14 @@ export default function Pricing() {
                       </li>
                     </ul>
                     
-                    <Button 
-                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                      data-testid="button-design-pro"
-                    >
-                      Start Design Pro
-                    </Button>
+                    <Link href="/contact?plan=design-pro">
+                      <Button 
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        data-testid="button-design-pro"
+                      >
+                        Start Design Pro
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
                 
@@ -327,13 +350,15 @@ export default function Pricing() {
                       </li>
                     </ul>
                     
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-border text-foreground hover:bg-muted transition-colors"
-                      data-testid="button-design-scale"
-                    >
-                      Start Design Scale
-                    </Button>
+                    <Link href="/contact?plan=design-scale">
+                      <Button 
+                        variant="outline" 
+                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        data-testid="button-design-scale"
+                      >
+                        Start Design Scale
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
@@ -341,8 +366,12 @@ export default function Pricing() {
 
             {/* Video Subscriptions */}
             <div className="space-y-8">
-              <div className="text-center">
-                <h2 className="text-3xl font-bold text-foreground mb-4">Video content at scale, without the editing headaches</h2>
+              <div className="text-center space-y-4">
+                <div className="flex items-center justify-center space-x-3">
+                  <span className="text-4xl">🎬</span>
+                  <h2 className="text-3xl font-bold text-foreground">Video Panda Subscriptions</h2>
+                </div>
+                <p className="text-lg text-muted-foreground">Video content at scale — your content creation partner</p>
               </div>
               
               <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
@@ -371,13 +400,15 @@ export default function Pricing() {
                       </li>
                     </ul>
                     
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-border text-foreground hover:bg-muted transition-colors"
-                      data-testid="button-video-starter"
-                    >
-                      Start Video Starter
-                    </Button>
+                    <Link href="/contact?plan=video-starter">
+                      <Button 
+                        variant="outline" 
+                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        data-testid="button-video-starter"
+                      >
+                        Start Video Starter
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
                 
@@ -414,12 +445,14 @@ export default function Pricing() {
                       </li>
                     </ul>
                     
-                    <Button 
-                      className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-                      data-testid="button-video-pro"
-                    >
-                      Start Video Pro
-                    </Button>
+                    <Link href="/contact?plan=video-pro">
+                      <Button 
+                        className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors button-bounce"
+                        data-testid="button-video-pro"
+                      >
+                        Start Video Pro
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
                 
@@ -452,13 +485,15 @@ export default function Pricing() {
                       </li>
                     </ul>
                     
-                    <Button 
-                      variant="outline" 
-                      className="w-full border-border text-foreground hover:bg-muted transition-colors"
-                      data-testid="button-video-scale"
-                    >
-                      Start Video Scale
-                    </Button>
+                    <Link href="/contact?plan=video-scale">
+                      <Button 
+                        variant="outline" 
+                        className="w-full border-border text-foreground hover:bg-muted transition-colors button-bounce"
+                        data-testid="button-video-scale"
+                      >
+                        Start Video Scale
+                      </Button>
+                    </Link>
                   </CardContent>
                 </Card>
               </div>
