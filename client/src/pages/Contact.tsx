@@ -37,7 +37,7 @@ export default function Contact() {
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3" data-testid="audit-expectation-1">
                         <Check className="w-4 h-4 text-primary mt-1" />
-                        <span className="text-muted-foreground">15-minute friendly conversation (no sales pitch)</span>
+                        <span className="text-muted-foreground">30-minute friendly conversation (no sales pitch)</span>
                       </li>
                       <li className="flex items-start space-x-3" data-testid="audit-expectation-2">
                         <Check className="w-4 h-4 text-primary mt-1" />
@@ -70,13 +70,13 @@ export default function Contact() {
                     <Link href="/contact?service=automation">
                       <Button 
                         variant="ghost"
-                        className="w-full text-left p-4 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option"
+                        className="w-full text-left p-6 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option min-h-[100px]"
                         data-testid="panda-automation"
                       >
-                        <div className="flex items-start space-x-3 w-full">
-                          <span className="text-2xl">🤖</span>
-                          <div className="space-y-2 flex-1">
-                            <h3 className="font-semibold text-foreground">"I'm losing leads and wasting time on repetitive tasks"</h3>
+                        <div className="flex items-start space-x-4 w-full">
+                          <span className="text-2xl flex-shrink-0">🤖</span>
+                          <div className="space-y-2 flex-1 min-w-0">
+                            <h3 className="font-semibold text-foreground leading-relaxed break-words">"I'm losing leads and wasting time on repetitive tasks"</h3>
                             <p className="text-sm text-primary font-medium">→ Meet Automation Panda (Book free audit)</p>
                           </div>
                         </div>
@@ -86,14 +86,14 @@ export default function Contact() {
                     <Link href="/contact?service=design">
                       <Button 
                         variant="ghost"
-                        className="w-full text-left p-4 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option"
+                        className="w-full text-left p-6 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option min-h-[100px]"
                         data-testid="panda-design"
                       >
-                        <div className="flex items-start space-x-3 w-full">
-                          <span className="text-2xl">🎨</span>
-                          <div className="space-y-2 flex-1">
-                            <h3 className="font-semibold text-foreground">"I need consistent design work but can't afford a full-time designer"</h3>
-                            <p className="text-sm text-primary font-medium">→ Meet Design Panda (Start at €700/month)</p>
+                        <div className="flex items-start space-x-4 w-full">
+                          <span className="text-2xl flex-shrink-0">🎨</span>
+                          <div className="space-y-2 flex-1 min-w-0">
+                            <h3 className="font-semibold text-foreground leading-relaxed break-words">"I need consistent design work but can't afford a full-time designer"</h3>
+                            <p className="text-sm text-primary font-medium">→ Meet Design Panda (Start at $700/month)</p>
                           </div>
                         </div>
                       </Button>
@@ -102,14 +102,14 @@ export default function Contact() {
                     <Link href="/contact?service=video">
                       <Button 
                         variant="ghost"
-                        className="w-full text-left p-4 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option"
+                        className="w-full text-left p-6 bg-gradient-to-r from-primary/10 to-primary/5 hover:from-primary/20 hover:to-primary/10 border border-primary/20 h-auto justify-start panda-option min-h-[100px]"
                         data-testid="panda-video"
                       >
-                        <div className="flex items-start space-x-3 w-full">
-                          <span className="text-2xl">🎬</span>
-                          <div className="space-y-2 flex-1">
-                            <h3 className="font-semibold text-foreground">"I want to create more video content but editing takes forever"</h3>
-                            <p className="text-sm text-primary font-medium">→ Meet Video Panda (Start at €600/month)</p>
+                        <div className="flex items-start space-x-4 w-full">
+                          <span className="text-2xl flex-shrink-0">🎬</span>
+                          <div className="space-y-2 flex-1 min-w-0">
+                            <h3 className="font-semibold text-foreground leading-relaxed break-words">"I want to create more video content but editing takes forever"</h3>
+                            <p className="text-sm text-primary font-medium">→ Meet Video Panda (Start at $600/month)</p>
                           </div>
                         </div>
                       </Button>
@@ -118,14 +118,14 @@ export default function Contact() {
                     <Link href="/contact?service=consultation">
                       <Button 
                         variant="ghost"
-                        className="w-full text-left p-4 bg-muted/50 hover:bg-muted border border-muted-foreground/20 h-auto justify-start panda-option"
+                        className="w-full text-left p-6 bg-muted/50 hover:bg-muted border border-muted-foreground/20 h-auto justify-start panda-option min-h-[100px]"
                         data-testid="panda-unsure"
                       >
-                        <div className="flex items-start space-x-3 w-full">
-                          <span className="text-2xl">🐼</span>
-                          <div className="space-y-2 flex-1">
-                            <h3 className="font-semibold text-foreground">"I'm not sure which panda team I need"</h3>
-                            <p className="text-sm text-muted-foreground">→ Book a free 15-min discovery call</p>
+                        <div className="flex items-start space-x-4 w-full">
+                          <span className="text-2xl flex-shrink-0">🐼</span>
+                          <div className="space-y-2 flex-1 min-w-0">
+                            <h3 className="font-semibold text-foreground leading-relaxed break-words">"I'm not sure which panda team I need"</h3>
+                            <p className="text-sm text-muted-foreground">→ Book a free 30-min discovery call</p>
                           </div>
                         </div>
                       </Button>

@@ -18,7 +18,7 @@ export default function Pricing() {
     <>
       <SEOHead 
         title="Pricing - Transparent Automation & Design Packages | Flexpandas"
-        description="Simple pricing for automation (€1,500-€9,000), design subscriptions (€700-€2,000/mo), and video editing (€600-€2,000/mo). No hidden fees."
+        description="Simple pricing for automation ($1,500-$9,000), design subscriptions ($700-$2,000/mo), and video editing ($600-$2,000/mo). No hidden fees."
         path="/pricing"
       />
       <main className="pt-16">
@@ -66,7 +66,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-starter-title">Starter</h3>
                       <p className="text-muted-foreground">"Quick Wins"</p>
-                      <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-starter-price">€1,500</div>
+                      <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-starter-price">$1,500</div>
                     </div>
                     
                     <p className="text-muted-foreground">Best for small teams wanting to save time fast</p>
@@ -115,7 +115,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-core-title">Core</h3>
                       <p className="text-muted-foreground">"Growth Engine"</p>
-                      <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-core-price">€4,500</div>
+                      <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-core-price">$4,500</div>
                     </div>
                     
                     <p className="text-muted-foreground">Best for businesses ready to scale and stop losing leads</p>
@@ -164,7 +164,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-scale-title">Scale</h3>
                       <p className="text-muted-foreground">"Full Ops System"</p>
-                      <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-scale-price">€7,500–€9,000</div>
+                      <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-scale-price">$7,500–$9,000</div>
                     </div>
                     
                     <p className="text-muted-foreground">Best for growing teams wanting automation across whole customer journey</p>
@@ -213,7 +213,7 @@ export default function Pricing() {
               </div>
               
               <div className="text-center">
-                <p className="text-muted-foreground" data-testid="care-plan-note">Need ongoing support? Add a Care Plan starting at €500/month.</p>
+                <p className="text-muted-foreground" data-testid="care-plan-note">Need ongoing support? Add a Care Plan starting at $500/month.</p>
               </div>
             </div>
 
@@ -234,7 +234,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="design-starter-title">Starter</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="design-starter-price">
-                        €700<span className="text-lg font-normal text-muted-foreground">/mo</span>
+                        $700<span className="text-lg font-normal text-muted-foreground">/mo</span>
                       </div>
                     </div>
                     
@@ -279,7 +279,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="design-pro-title">Pro</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="design-pro-price">
-                        €1,200<span className="text-lg font-normal text-muted-foreground">/mo</span>
+                        $1,200<span className="text-lg font-normal text-muted-foreground">/mo</span>
                       </div>
                     </div>
                     
@@ -323,7 +323,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="design-scale-title">Scale</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="design-scale-price">
-                        €2,000<span className="text-lg font-normal text-muted-foreground">/mo</span>
+                        $2,000<span className="text-lg font-normal text-muted-foreground">/mo</span>
                       </div>
                     </div>
                     
@@ -381,7 +381,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="video-starter-title">Starter</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="video-starter-price">
-                        €600<span className="text-lg font-normal text-muted-foreground">/mo</span>
+                        $600<span className="text-lg font-normal text-muted-foreground">/mo</span>
                       </div>
                     </div>
                     
@@ -422,7 +422,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="video-pro-title">Pro</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="video-pro-price">
-                        €1,200<span className="text-lg font-normal text-muted-foreground">/mo</span>
+                        $1,200<span className="text-lg font-normal text-muted-foreground">/mo</span>
                       </div>
                     </div>
                     
@@ -462,7 +462,7 @@ export default function Pricing() {
                     <div>
                       <h3 className="text-2xl font-bold text-foreground" data-testid="video-scale-title">Scale</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="video-scale-price">
-                        €2,000<span className="text-lg font-normal text-muted-foreground">/mo</span>
+                        $2,000<span className="text-lg font-normal text-muted-foreground">/mo</span>
                       </div>
                     </div>
                     
@@ -507,13 +507,13 @@ export default function Pricing() {
                   <div className="space-y-2">
                     <h4 className="font-semibold text-foreground">Extra requests</h4>
                     <p className="text-2xl font-bold text-foreground" data-testid="addon-extra-price">
-                      €150 <span className="text-sm font-normal text-muted-foreground">each</span>
+                      $150 <span className="text-sm font-normal text-muted-foreground">each</span>
                     </p>
                   </div>
                   <div className="space-y-2">
                     <h4 className="font-semibold text-foreground">Strategy call</h4>
                     <p className="text-2xl font-bold text-foreground" data-testid="addon-strategy-price">
-                      €200 <span className="text-sm font-normal text-muted-foreground">(30 min creative direction consult)</span>
+                      $200 <span className="text-sm font-normal text-muted-foreground">(30 min creative direction consult)</span>
                     </p>
                   </div>
                   <div className="space-y-2">
@@ -583,7 +583,7 @@ export default function Pricing() {
                   Ready to save time and scale faster?
                 </h2>
                 <p className="text-xl text-muted-foreground">
-                  Book a free 15-min audit call and let's find your quickest wins.
+                  Book a free 30-min audit call and let's find your quickest wins.
                 </p>
                 <Link href="/contact">
                   <Button 

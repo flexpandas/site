@@ -64,7 +64,7 @@ export default function Home() {
             <div className="flex items-center justify-center space-x-6 text-sm text-muted-foreground">
               <div className="flex items-center space-x-2">
                 <i className="fas fa-clock text-primary"></i>
-                <span>15-min friendly call</span>
+                <span>30-min friendly call</span>
               </div>
               <div className="flex items-center space-x-2">
                 <i className="fas fa-gift text-primary"></i>
@@ -203,7 +203,7 @@ export default function Home() {
                     </Button>
                   </Link>
                   <p className="text-sm text-muted-foreground">
-                    ⚡ Get specific automation ideas in just 15 minutes • No commitments required
+                    ⚡ Get specific automation ideas in just 30 minutes • No commitments required
                   </p>
                 </div>
               </div>
@@ -351,7 +351,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-xl font-bold text-foreground" data-testid="service-automation-panda-price">Projects from €1,500</p>
+                    <p className="text-xl font-bold text-foreground" data-testid="service-automation-panda-price">Projects from $1,500</p>
                   </div>
                 </CardContent>
               </Card>
@@ -372,7 +372,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-xl font-bold text-foreground" data-testid="service-design-panda-price">From €700/month</p>
+                    <p className="text-xl font-bold text-foreground" data-testid="service-design-panda-price">From $700/month</p>
                   </div>
                 </CardContent>
               </Card>
@@ -393,7 +393,7 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="pt-4 border-t border-border">
-                    <p className="text-xl font-bold text-foreground" data-testid="service-video-panda-price">From €600/month</p>
+                    <p className="text-xl font-bold text-foreground" data-testid="service-video-panda-price">From $600/month</p>
                   </div>
                 </CardContent>
               </Card>
@@ -525,7 +525,7 @@ export default function Home() {
               Ready to stop wasting time and start scaling?
             </h2>
             <p className="text-xl text-muted-foreground" data-testid="final-cta-description">
-              Book a free 15-minute audit call and let's show you where automation can save you hours every week.
+              Book a free 30-minute audit call and let's show you where automation can save you hours every week.
             </p>
             <Link href="/contact">
               <Button 

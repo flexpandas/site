@@ -112,7 +112,7 @@ export default function Footer() {
         
         <div className="border-t border-border mt-8 pt-8 text-center space-y-2">
           <p className="text-muted-foreground" data-testid="footer-copyright">
-            &copy; 2024 Flexpandas — Work smarter, not harder.
+            &copy; 2025 Flexpandas — Work smarter, not harder.
           </p>
           <p className="text-sm text-muted-foreground" data-testid="footer-response-time">
             We typically respond within 2-4 hours during business hours (9 AM - 6 PM CET)

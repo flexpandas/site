@@ -158,6 +158,43 @@ html {
   box-shadow: 0 8px 20px -5px hsl(158, 64%, 52% / 0.2);
 }
 
+/* Enhanced CTA spacing and visual hierarchy */
+.cta-primary {
+  @apply px-8 py-4 text-lg font-semibold rounded-xl shadow-lg;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-xl hover:scale-[1.02];
+  min-height: 56px;
+  line-height: 1.4;
+}
+
+.cta-secondary {
+  @apply px-6 py-3 text-base font-medium rounded-lg;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-md hover:scale-[1.01];
+  min-height: 48px;
+  line-height: 1.4;
+}
+
+.cta-section {
+  @apply py-16 px-4 sm:px-6 lg:px-8;
+}
+
+.cta-container {
+  @apply max-w-4xl mx-auto text-center space-y-8;
+}
+
+.cta-text {
+  @apply text-xl sm:text-2xl text-muted-foreground leading-relaxed mb-8;
+}
+
+.cta-buttons {
+  @apply flex flex-col sm:flex-row gap-6 justify-center items-center;
+}
+
+.cta-buttons-stacked {
+  @apply flex flex-col gap-4 justify-center items-center;
+}
+
 @layer base {
   * {
     @apply border-border;
