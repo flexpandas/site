@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import logoUrl from "@assets/favicon_1757783065181.png";
 
 export default function Footer() {
   return (
@@ -7,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <span className="text-2xl" data-testid="footer-logo-panda">🐼</span>
+              <img src={logoUrl} alt="Flexpandas Logo" className="w-8 h-8 rounded-full" data-testid="footer-logo-image" />
               <span className="text-xl font-bold text-foreground" data-testid="footer-logo-text">Flexpandas</span>
             </div>
             <p className="text-muted-foreground" data-testid="footer-tagline">Work smarter, not harder</p>

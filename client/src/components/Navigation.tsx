@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import logoUrl from "@assets/favicon_1757783065181.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -26,7 +27,7 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <Link href="/" className="flex items-center space-x-2 hover:opacity-80 transition-opacity">
-            <span className="text-2xl" data-testid="logo-panda">🐼</span>
+            <img src={logoUrl} alt="Flexpandas Logo" className="w-8 h-8 rounded-full" data-testid="logo-image" />
             <span className="text-xl font-bold text-foreground" data-testid="logo-text">Flexpandas</span>
           </Link>
           
