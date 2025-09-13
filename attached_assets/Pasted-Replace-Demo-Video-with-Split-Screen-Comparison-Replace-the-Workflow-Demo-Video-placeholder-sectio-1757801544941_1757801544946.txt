@@ -1,0 +1,232 @@
+Replace Demo Video with Split-Screen Comparison
+Replace the "Workflow Demo Video" placeholder section with an interactive split-screen comparison that shows manual vs automated processes.
+Section Requirements:
+Container Structure:
+
+Remove the video placeholder entirely
+Create a two-column layout that works on desktop and mobile
+Add section title: "Manual vs Automated: See the Difference"
+Include subtitle: "Why waste hours when automation can do it in minutes?"
+
+Left Panel - "Manual Process" (Problem Side):
+html<div class="comparison-container">
+  <div class="manual-panel">
+    <div class="panel-header">
+      <h3>Manual Process</h3>
+      <div class="time-badge time-bad">4+ Hours</div>
+    </div>
+    
+    <div class="process-steps">
+      <div class="step step-manual">
+        <div class="step-icon">📧</div>
+        <div class="step-content">
+          <strong>Lead arrives</strong>
+          <p>Sits in inbox unnoticed</p>
+        </div>
+      </div>
+      
+      <div class="step step-manual">
+        <div class="step-icon">⏰</div>
+        <div class="step-content">
+          <strong>4 hours later</strong>
+          <p>Someone finally checks email</p>
+        </div>
+      </div>
+      
+      <div class="step step-manual">
+        <div class="step-icon">📝</div>
+        <div class="step-content">
+          <strong>Manual data entry</strong>
+          <p>Copy info to spreadsheet - 15 min</p>
+        </div>
+      </div>
+      
+      <div class="step step-manual">
+        <div class="step-icon">📊</div>
+        <div class="step-content">
+          <strong>Update tracking</strong>
+          <p>Add to CRM manually - 10 min</p>
+        </div>
+      </div>
+      
+      <div class="step step-manual">
+        <div class="step-icon">💸</div>
+        <div class="step-content">
+          <strong>Lead goes cold</strong>
+          <p>Competitor responds first</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="automated-panel">
+    <div class="panel-header">
+      <h3>Automated Process</h3>
+      <div class="time-badge time-good">2 Minutes</div>
+    </div>
+    
+    <div class="process-steps">
+      <div class="step step-auto">
+        <div class="step-icon">⚡</div>
+        <div class="step-content">
+          <strong>Lead arrives</strong>
+          <p>Instant Slack notification sent</p>
+        </div>
+      </div>
+      
+      <div class="step step-auto">
+        <div class="step-icon">🤖</div>
+        <div class="step-content">
+          <strong>Auto-added to CRM</strong>
+          <p>All details captured - 30 seconds</p>
+        </div>
+      </div>
+      
+      <div class="step step-auto">
+        <div class="step-icon">✉️</div>
+        <div class="step-content">
+          <strong>Personalized email sent</strong>
+          <p>Custom response template - instant</p>
+        </div>
+      </div>
+      
+      <div class="step step-auto">
+        <div class="step-icon">📈</div>
+        <div class="step-content">
+          <strong>Dashboard updates</strong>
+          <p>Real-time metrics tracking</p>
+        </div>
+      </div>
+      
+      <div class="step step-auto">
+        <div class="step-icon">🎯</div>
+        <div class="step-content">
+          <strong>Lead stays warm</strong>
+          <p>Higher conversion rates</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+CSS Styling Requirements:
+css.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.manual-panel, .automated-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.manual-panel {
+  border: 2px solid #ef4444;
+  background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.automated-panel {
+  border: 2px solid #10b981;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.panel-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.time-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.time-bad {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.time-good {
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.step-manual {
+  background: rgba(239, 68, 68, 0.05);
+  border-left: 3px solid #ef4444;
+}
+
+.step-auto {
+  background: rgba(16, 185, 129, 0.05);
+  border-left: 3px solid #10b981;
+}
+
+.step-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.step-content strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.step-content p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .comparison-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .manual-panel, .automated-panel {
+    padding: 1.5rem;
+  }
+}
+Section Footer:
+Add below the comparison:
+html<div class="comparison-cta">
+  <h4>Ready to Make the Switch?</h4>
+  <p>Book a free audit and we'll show you exactly which processes to automate first</p>
+  <button class="cta-button">Get My Free Automation Audit</button>
+</div>
+Implementation Notes:
+
+Replace the entire video placeholder section with this comparison
+Keep the same positioning in the page layout
+Ensure smooth animations when scrolling into view
+Test mobile responsiveness thoroughly
+Make sure the CTA button uses the same styling as other site buttons
+
+This creates immediate visual impact showing the value proposition without needing actual video content. The time comparison (4+ hours vs 2 minutes) provides concrete benefit communication.

@@ -76,16 +76,125 @@ export default function Home() {
               </div>
             </div>
             
+            {/* Manual vs Automated Comparison */}
             <div className="pt-8">
-              <div className="max-w-4xl mx-auto bg-gradient-to-br from-muted to-muted/50 rounded-2xl p-12 relative overflow-hidden">
-                <div className="absolute top-4 right-4 text-3xl animate-float" data-testid="hero-video-panda">🐼</div>
-                <div className="text-center space-y-4">
-                  <div className="w-24 h-24 bg-primary/20 rounded-full mx-auto flex items-center justify-center">
-                    <i className="fas fa-play text-3xl text-primary"></i>
+              <div className="text-center space-y-4 mb-8">
+                <h3 className="text-3xl font-bold text-foreground" data-testid="comparison-title">Manual vs Automated: See the Difference</h3>
+                <p className="text-xl text-muted-foreground" data-testid="comparison-subtitle">Why waste hours when automation can do it in minutes?</p>
+              </div>
+              
+              <div className="comparison-container">
+                <div className="manual-panel">
+                  <div className="panel-header">
+                    <h3>Manual Process</h3>
+                    <div className="time-badge time-bad">4+ Hours</div>
                   </div>
-                  <h3 className="text-xl font-semibold" data-testid="hero-video-title">Workflow Demo Video</h3>
-                  <p className="text-muted-foreground" data-testid="hero-video-description">See how we automate your business processes in real-time</p>
+                  
+                  <div className="process-steps">
+                    <div className="step step-manual">
+                      <div className="step-icon">📧</div>
+                      <div className="step-content">
+                        <strong>Lead arrives</strong>
+                        <p>Sits in inbox unnoticed</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-manual">
+                      <div className="step-icon">⏰</div>
+                      <div className="step-content">
+                        <strong>4 hours later</strong>
+                        <p>Someone finally checks email</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-manual">
+                      <div className="step-icon">📝</div>
+                      <div className="step-content">
+                        <strong>Manual data entry</strong>
+                        <p>Copy info to spreadsheet - 15 min</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-manual">
+                      <div className="step-icon">📊</div>
+                      <div className="step-content">
+                        <strong>Update tracking</strong>
+                        <p>Add to CRM manually - 10 min</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-manual">
+                      <div className="step-icon">💸</div>
+                      <div className="step-content">
+                        <strong>Lead goes cold</strong>
+                        <p>Competitor responds first</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
+
+                <div className="automated-panel">
+                  <div className="panel-header">
+                    <h3>Automated Process</h3>
+                    <div className="time-badge time-good">2 Minutes</div>
+                  </div>
+                  
+                  <div className="process-steps">
+                    <div className="step step-auto">
+                      <div className="step-icon">⚡</div>
+                      <div className="step-content">
+                        <strong>Lead arrives</strong>
+                        <p>Instant Slack notification sent</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-auto">
+                      <div className="step-icon">🤖</div>
+                      <div className="step-content">
+                        <strong>Auto-added to CRM</strong>
+                        <p>All details captured - 30 seconds</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-auto">
+                      <div className="step-icon">✉️</div>
+                      <div className="step-content">
+                        <strong>Personalized email sent</strong>
+                        <p>Custom response template - instant</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-auto">
+                      <div className="step-icon">📈</div>
+                      <div className="step-content">
+                        <strong>Dashboard updates</strong>
+                        <p>Real-time metrics tracking</p>
+                      </div>
+                    </div>
+                    
+                    <div className="step step-auto">
+                      <div className="step-icon">🎯</div>
+                      <div className="step-content">
+                        <strong>Lead stays warm</strong>
+                        <p>Higher conversion rates</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="comparison-cta">
+                <h4>Ready to Make the Switch?</h4>
+                <p>Book a free audit and we'll show you exactly which processes to automate first</p>
+                <Link href="/contact">
+                  <Button 
+                    size="lg" 
+                    className="cta-button bg-primary text-primary-foreground hover:bg-primary/90 shadow-lg font-semibold px-8 py-4"
+                    data-testid="button-comparison-cta"
+                  >
+                    📞 Get My Free Automation Audit
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

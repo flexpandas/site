@@ -4,6 +4,14 @@
 
 Flexpandas is a modern 4-page business website for an automation and design agency. The application is built as a full-stack web application with a React frontend and Express backend, showcasing services including AI automation, design subscriptions, and video editing. The site features a professional design with panda-themed branding, contact forms, pricing information, and service descriptions designed to convert visitors into leads.
 
+## Recent Changes
+
+### September 13, 2025
+- **Replaced Demo Video with Split-Screen Comparison**: Implemented interactive manual vs automated process comparison showing 4+ hours vs 2 minutes time savings
+- **Enhanced Visual Hierarchy**: Added color-coded panels (red for manual problems, green for automated solutions) with step-by-step process flows
+- **Improved Conversion Elements**: Added comparison-specific CTA section with clear value proposition messaging
+- **Mobile Responsive Design**: CSS Grid layout that adapts from two-column desktop to single-column mobile view
+
 ## User Preferences
 
 Preferred communication style: Simple, everyday language.

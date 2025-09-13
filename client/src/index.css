@@ -233,6 +233,142 @@ button[data-testid="mobile-button-book-audit"] {
   font-weight: 600 !important;
 }
 
+/* SPLIT-SCREEN COMPARISON STYLES */
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.manual-panel, .automated-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.manual-panel {
+  border: 2px solid #ef4444;
+  background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.automated-panel {
+  border: 2px solid #10b981;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.panel-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.time-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.time-bad {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.time-good {
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.step-manual {
+  background: rgba(239, 68, 68, 0.05);
+  border-left: 3px solid #ef4444;
+}
+
+.step-auto {
+  background: rgba(16, 185, 129, 0.05);
+  border-left: 3px solid #10b981;
+}
+
+.step-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.step-content strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.step-content p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.comparison-cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 2rem auto 0;
+  padding: 2rem;
+  background: linear-gradient(135deg, hsl(var(--primary)/0.05) 0%, hsl(var(--primary)/0.1) 100%);
+  border-radius: 16px;
+  border: 1px solid hsl(var(--primary)/0.2);
+}
+
+.comparison-cta h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: hsl(var(--foreground));
+}
+
+.comparison-cta p {
+  color: hsl(var(--muted-foreground));
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .comparison-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+  
+  .manual-panel, .automated-panel {
+    padding: 1.5rem;
+  }
+  
+  .comparison-cta {
+    margin: 1.5rem auto 0;
+    padding: 1.5rem;
+  }
+}
+
 /* PRICING CARD CENTERING - Maximum specificity */
 .pricing-card-header, 
 div.pricing-card-header,
