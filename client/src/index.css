@@ -224,6 +224,15 @@ button[class*="bg-primary"] {
   display: inline-flex !important;
 }
 
+/* NAVIGATION BUTTON - Restore original small size */
+button[data-testid="button-book-audit"],
+button[data-testid="mobile-button-book-audit"] {
+  padding: 8px 12px !important;
+  font-size: 0.875rem !important;
+  min-height: 36px !important;
+  font-weight: 600 !important;
+}
+
 /* PRICING CARD CENTERING - Maximum specificity */
 .pricing-card-header, 
 div.pricing-card-header,
