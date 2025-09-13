@@ -52,7 +52,7 @@ export default function Pricing() {
           <div className="space-y-16">
             <div className="space-y-8">
               <div className="text-center space-y-4">
-                <div className="flex items-center justify-center space-x-3">
+                <div className="flex items-center justify-center space-x-3 pricing-section-icon">
                   <span className="text-4xl">🤖</span>
                   <h2 className="text-3xl font-bold text-foreground">Automation Panda Packages</h2>
                 </div>
@@ -63,7 +63,7 @@ export default function Pricing() {
                 {/* Starter */}
                 <Card className="hover:shadow-xl transition-shadow card-hover">
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-starter-title">Starter</h3>
                       <p className="text-muted-foreground">"Quick Wins"</p>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-starter-price">$1,500</div>
@@ -112,7 +112,7 @@ export default function Pricing() {
                   </Badge>
                   
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-core-title">Core</h3>
                       <p className="text-muted-foreground">"Growth Engine"</p>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-core-price">$4,500</div>
@@ -161,7 +161,7 @@ export default function Pricing() {
                 {/* Scale */}
                 <Card className="hover:shadow-xl transition-shadow card-hover">
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="automation-scale-title">Scale</h3>
                       <p className="text-muted-foreground">"Full Ops System"</p>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="automation-scale-price">$7,500–$9,000</div>
@@ -220,7 +220,7 @@ export default function Pricing() {
             {/* Design Subscriptions */}
             <div className="space-y-8">
               <div className="text-center space-y-4">
-                <div className="flex items-center justify-center space-x-3">
+                <div className="flex items-center justify-center space-x-3 pricing-section-icon">
                   <span className="text-4xl">🎨</span>
                   <h2 className="text-3xl font-bold text-foreground">Design Panda Subscriptions</h2>
                 </div>
@@ -231,7 +231,7 @@ export default function Pricing() {
                 {/* Design Starter */}
                 <Card className="hover:shadow-xl transition-shadow">
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="design-starter-title">Starter</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="design-starter-price">
                         $700<span className="text-lg font-normal text-muted-foreground">/mo</span>
@@ -276,7 +276,7 @@ export default function Pricing() {
                   </Badge>
                   
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="design-pro-title">Pro</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="design-pro-price">
                         $1,200<span className="text-lg font-normal text-muted-foreground">/mo</span>
@@ -320,7 +320,7 @@ export default function Pricing() {
                 {/* Design Scale */}
                 <Card className="hover:shadow-xl transition-shadow">
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="design-scale-title">Scale</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="design-scale-price">
                         $2,000<span className="text-lg font-normal text-muted-foreground">/mo</span>
@@ -367,7 +367,7 @@ export default function Pricing() {
             {/* Video Subscriptions */}
             <div className="space-y-8">
               <div className="text-center space-y-4">
-                <div className="flex items-center justify-center space-x-3">
+                <div className="flex items-center justify-center space-x-3 pricing-section-icon">
                   <span className="text-4xl">🎬</span>
                   <h2 className="text-3xl font-bold text-foreground">Video Panda Subscriptions</h2>
                 </div>
@@ -378,7 +378,7 @@ export default function Pricing() {
                 {/* Video Starter */}
                 <Card className="hover:shadow-xl transition-shadow">
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="video-starter-title">Starter</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="video-starter-price">
                         $600<span className="text-lg font-normal text-muted-foreground">/mo</span>
@@ -419,7 +419,7 @@ export default function Pricing() {
                   </Badge>
                   
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="video-pro-title">Pro</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="video-pro-price">
                         $1,200<span className="text-lg font-normal text-muted-foreground">/mo</span>
@@ -459,7 +459,7 @@ export default function Pricing() {
                 {/* Video Scale */}
                 <Card className="hover:shadow-xl transition-shadow">
                   <CardContent className="p-8 space-y-6">
-                    <div>
+                    <div className="pricing-card-header">
                       <h3 className="text-2xl font-bold text-foreground" data-testid="video-scale-title">Scale</h3>
                       <div className="text-3xl font-bold text-foreground mt-4" data-testid="video-scale-price">
                         $2,000<span className="text-lg font-normal text-muted-foreground">/mo</span>
