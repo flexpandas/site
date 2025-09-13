@@ -7,7 +7,7 @@ interface CalendarBookingProps {
   calendarUrl?: string;
 }
 
-export default function CalendarBooking({ calendarUrl = "https://cal.com/cal-demo/15min" }: CalendarBookingProps) {
+export default function CalendarBooking({ calendarUrl = "https://cal.com/flexpandas/30min" }: CalendarBookingProps) {
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
 
@@ -26,7 +26,7 @@ export default function CalendarBooking({ calendarUrl = "https://cal.com/cal-dem
       <DialogContent className="max-w-4xl max-h-[90vh] h-[90vh] overflow-hidden">
         <DialogHeader>
           <DialogTitle className="text-2xl font-bold text-center text-foreground">
-            Book Your Free 15-Minute Audit Call 🐼
+            Book Your Free 30-Minute Audit Call 🐼
           </DialogTitle>
         </DialogHeader>
         
@@ -55,7 +55,7 @@ export default function CalendarBooking({ calendarUrl = "https://cal.com/cal-dem
         
         <div className="mt-4 p-4 bg-muted/30 rounded-lg flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground text-center sm:text-left">
-            <strong>Note:</strong> This is a demo calendar. In production, this would connect to your actual Cal.com or Calendly account.
+            <strong>Note:</strong> Schedule your free 30-minute business automation audit. We'll analyze your current processes and identify opportunities to save you 20+ hours per month.
           </p>
           <Button 
             variant="outline" 
