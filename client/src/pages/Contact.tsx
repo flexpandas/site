@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import { Check, Download, Play, FileText } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
@@ -35,19 +36,19 @@ export default function Contact() {
                     <h3 className="font-semibold text-foreground">What to expect:</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3" data-testid="audit-expectation-1">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-muted-foreground">15-minute friendly conversation (no sales pitch)</span>
                       </li>
                       <li className="flex items-start space-x-3" data-testid="audit-expectation-2">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-muted-foreground">Quick assessment of your current workflows</span>
                       </li>
                       <li className="flex items-start space-x-3" data-testid="audit-expectation-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-muted-foreground">2-3 specific automation opportunities we'd implement</span>
                       </li>
                       <li className="flex items-start space-x-3" data-testid="audit-expectation-4">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-muted-foreground">Clear next steps if you want to move forward</span>
                       </li>
                     </ul>
@@ -146,7 +147,7 @@ export default function Contact() {
                   
                   <div className="space-y-4">
                     <div className="flex items-start space-x-3" data-testid="resource-checklist">
-                      <i className="fas fa-download text-primary mt-1"></i>
+                      <Download className="w-4 h-4 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground">Free Automation Checklist</h3>
                         <p className="text-sm text-muted-foreground">10 tasks you can automate today</p>
@@ -154,7 +155,7 @@ export default function Contact() {
                     </div>
                     
                     <div className="flex items-start space-x-3" data-testid="resource-tutorials">
-                      <i className="fas fa-play text-primary mt-1"></i>
+                      <Play className="w-4 h-4 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground">Weekly tutorials</h3>
                         <p className="text-sm text-muted-foreground">On TikTok, LinkedIn, and YouTube</p>
@@ -162,7 +163,7 @@ export default function Contact() {
                     </div>
                     
                     <div className="flex items-start space-x-3" data-testid="resource-templates">
-                      <i className="fas fa-file-alt text-primary mt-1"></i>
+                      <FileText className="w-4 h-4 text-primary mt-1" />
                       <div>
                         <h3 className="font-semibold text-foreground">Template library</h3>
                         <p className="text-sm text-muted-foreground">Free Make.com automation templates</p>

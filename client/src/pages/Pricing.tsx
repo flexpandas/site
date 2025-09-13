@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { Check, ChevronDown, ChevronUp } from "lucide-react";
 import SEOHead from "@/components/SEOHead";
 
 export default function Pricing() {
@@ -73,19 +73,19 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Workflow audit (1-hour call + systems map)</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">3 core automations</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">1 dashboard</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">2 weeks of post-launch support</span>
                       </li>
                     </ul>
@@ -122,23 +122,23 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Workflow audit + strategy map</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">6–8 custom automations</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">1 AI chatbot</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">2 dashboards</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">4 weeks of post-launch support</span>
                       </li>
                     </ul>
@@ -171,27 +171,27 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Deep-dive audit + full workflow blueprint</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">10–12 advanced automations</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">2 AI chatbots</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">3 dashboards</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Training & documentation</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">8 weeks of post-launch support</span>
                       </li>
                     </ul>
@@ -240,19 +240,19 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">1 active request at a time</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">30 design hours/month</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Logos, social posts, ads, landing page sections</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">48h turnaround per request</span>
                       </li>
                     </ul>
@@ -285,23 +285,23 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">2 active requests at a time</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">50 design hours/month</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Branding kits, website UI, app design, marketing campaigns</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">24–48h turnaround per request</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Priority support</span>
                       </li>
                     </ul>
@@ -329,23 +329,23 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">3 active requests at a time</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">80 design hours/month</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Complex design projects, multi-page app/web design</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">24h turnaround per request</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Dedicated account manager</span>
                       </li>
                     </ul>
@@ -387,15 +387,15 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Up to 8 short-form videos/month</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Captions, basic edits, branded style</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">72h turnaround</span>
                       </li>
                     </ul>
@@ -428,19 +428,19 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Up to 16 short-form videos/month + 1 long-form edit</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Captions, hooks, branded templates, thumbnail design</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">48h turnaround</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Priority editing queue</span>
                       </li>
                     </ul>
@@ -468,19 +468,19 @@ export default function Pricing() {
                     
                     <ul className="space-y-3">
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Up to 30 short-form videos/month + 2 long-form edits</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Captions, animations, hooks, custom thumbnails</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">24–48h turnaround</span>
                       </li>
                       <li className="flex items-start space-x-3">
-                        <i className="fas fa-check text-primary mt-1"></i>
+                        <Check className="w-4 h-4 text-primary mt-1" />
                         <span className="text-foreground">Dedicated editor & account manager</span>
                       </li>
                     </ul>
