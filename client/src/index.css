@@ -207,6 +207,9 @@ html {
   font-size: 1.1rem;
   min-height: 44px;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
 }
 
 /* Centered standalone CTAs with width constraint */
@@ -329,6 +332,8 @@ div > p + a > button {
   display: block !important;
   white-space: normal !important;
   align-items: stretch !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
 }
 
 .panda-option:hover {

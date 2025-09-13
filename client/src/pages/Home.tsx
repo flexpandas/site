@@ -308,7 +308,7 @@ export default function Home() {
             <Link href="/contact">
               <Button 
                 size="lg" 
-                className="bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 text-lg px-8 py-4"
+                className="cta-button bg-primary text-primary-foreground hover:bg-primary/90 transition-all transform hover:scale-105 text-lg px-8 py-4"
                 data-testid="button-process-book-audit"
               >
                 Book My Free Audit
@@ -501,7 +501,7 @@ export default function Home() {
               
               <div className="text-center space-y-4">
                 <div className="w-16 h-16 bg-primary/10 rounded-full mx-auto flex items-center justify-center">
-                  <i className="fas fa-euro-sign text-2xl text-primary"></i>
+                  <i className="fas fa-dollar-sign text-2xl text-primary"></i>
                 </div>
                 <h3 className="font-semibold text-foreground" data-testid="why-affordable">Affordable, transparent pricing</h3>
               </div>
