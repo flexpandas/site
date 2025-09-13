@@ -1,10 +1,17 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import SEOHead from "@/components/SEOHead";
 
 export default function About() {
   return (
-    <main className="pt-16">
+    <>
+      <SEOHead 
+        title="About Flexpandas - Your Automation & Design Partners | Flexpandas"
+        description="Learn how Flexpandas helps small businesses and creators save time with automation, design subscriptions, and video editing. Work smarter, not harder."
+        path="/about"
+      />
+      <main className="pt-16">
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-4xl mx-auto">
           <div className="text-center space-y-8 mb-16">
@@ -98,6 +105,7 @@ export default function About() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

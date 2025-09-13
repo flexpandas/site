@@ -2,6 +2,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import SEOHead from "@/components/SEOHead";
 
 export default function Home() {
   const scrollToSection = (sectionId: string) => {
@@ -19,7 +20,13 @@ export default function Home() {
   };
 
   return (
-    <main className="pt-16">
+    <>
+      <SEOHead 
+        title="Flexpandas - Work Smarter, Not Harder | Automation & Design Agency"
+        description="Save 20+ hours every month with AI & automation. Flexpandas builds smart systems for lead follow-up, client onboarding, and business automation."
+        path="/"
+      />
+      <main className="pt-16">
       {/* Hero Section */}
       <section className="pt-24 pb-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-7xl mx-auto">
@@ -374,6 +381,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

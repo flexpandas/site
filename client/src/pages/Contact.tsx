@@ -2,10 +2,17 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import ContactForm from "@/components/ContactForm";
+import SEOHead from "@/components/SEOHead";
 
 export default function Contact() {
   return (
-    <main className="pt-16">
+    <>
+      <SEOHead 
+        title="Contact Flexpandas - Get Your Free Automation Audit | Flexpandas"
+        description="Ready to save 20+ hours every month? Book your free automation audit call. Contact Flexpandas for automation, design, and video editing services."
+        path="/contact"
+      />
+      <main className="pt-16">
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -206,6 +213,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }

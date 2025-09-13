@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from "@/components/ui/collapsible";
 import { ChevronDown, ChevronUp } from "lucide-react";
+import SEOHead from "@/components/SEOHead";
 
 export default function Pricing() {
   const [openFAQ, setOpenFAQ] = useState<string | null>(null);
@@ -14,7 +15,13 @@ export default function Pricing() {
   };
 
   return (
-    <main className="pt-16">
+    <>
+      <SEOHead 
+        title="Pricing - Transparent Automation & Design Packages | Flexpandas"
+        description="Simple pricing for automation (€1,500-€9,000), design subscriptions (€700-€2,000/mo), and video editing (€600-€2,000/mo). No hidden fees."
+        path="/pricing"
+      />
+      <main className="pt-16">
       <section className="py-16 px-4 sm:px-6 lg:px-8 bg-muted/30">
         <div className="max-w-7xl mx-auto">
           {/* Header */}
@@ -557,6 +564,7 @@ export default function Pricing() {
           </div>
         </div>
       </section>
-    </main>
+      </main>
+    </>
   );
 }
