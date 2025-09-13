@@ -35,16 +35,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Get contact submissions (for admin use)
-  app.get("/api/contact", async (req, res) => {
-    try {
-      const submissions = await storage.getContactSubmissions();
-      res.json(submissions);
-    } catch (error) {
-      console.error("Error fetching contact submissions:", error);
-      res.status(500).json({ message: "Error fetching submissions" });
-    }
-  });
+  // Note: Contact submissions retrieval should be protected by authentication
+  // Removed public GET endpoint to protect user privacy and contact data
 
   const httpServer = createServer(app);
   return httpServer;
