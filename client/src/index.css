@@ -222,18 +222,54 @@ html {
   margin-bottom: 2rem;
 }
 
-/* When CTAs appear after text blocks - increased spacing */
+/* When CTAs appear after text blocks - increased spacing for both direct and Link-wrapped buttons */
 p + .cta-button,
-.text-content + .cta-button {
-  margin-top: 4rem;
+p + a > .cta-button,
+p + a > button,
+.text-content + .cta-button,
+.text-content + a > .cta-button,
+.text-content + a > button {
+  margin-top: 6rem;
 }
 
 /* Additional spacing for CTAs after any text element */
 h1 + .cta-button,
+h1 + a > .cta-button,
+h1 + a > button,
 h2 + .cta-button,
+h2 + a > .cta-button,
+h2 + a > button,
 h3 + .cta-button,
-div > p + .cta-button {
-  margin-top: 4rem;
+h3 + a > .cta-button,
+h3 + a > button,
+div > p + .cta-button,
+div > p + a > .cta-button,
+div > p + a > button {
+  margin-top: 6rem;
+}
+
+/* Mobile responsive spacing */
+@media (max-width: 768px) {
+  p + .cta-button,
+  p + a > .cta-button,
+  p + a > button,
+  .text-content + .cta-button,
+  .text-content + a > .cta-button,
+  .text-content + a > button,
+  h1 + .cta-button,
+  h1 + a > .cta-button,
+  h1 + a > button,
+  h2 + .cta-button,
+  h2 + a > .cta-button,
+  h2 + a > button,
+  h3 + .cta-button,
+  h3 + a > .cta-button,
+  h3 + a > button,
+  div > p + .cta-button,
+  div > p + a > .cta-button,
+  div > p + a > button {
+    margin-top: 3rem;
+  }
 }
 
 /* When multiple CTAs are grouped */
@@ -281,7 +317,7 @@ div > p + .cta-button {
   line-height: 1.5;
 }
 
-/* Fix option cards - overriding existing styles */
+/* Fix option cards - overriding existing styles AND shadcn Button defaults */
 .panda-option {
   background: white;
   border: 2px solid #f3f4f6;
@@ -289,6 +325,10 @@ div > p + .cta-button {
   padding: 1.5rem;
   margin-bottom: 1rem;
   transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  /* Override shadcn Button's inline-flex and nowrap */
+  display: block !important;
+  white-space: normal !important;
+  align-items: stretch !important;
 }
 
 .panda-option:hover {
@@ -313,8 +353,10 @@ div > p + .cta-button {
   flex: 1;
   min-width: 0;
   word-wrap: break-word;
-  overflow-wrap: break-word;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   hyphens: auto;
+  white-space: normal;
 }
 
 .panda-option-title {
