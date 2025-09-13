@@ -1,0 +1,341 @@
+
+Build a professional 4-page business website for Flexpandas, an automation and design agency. Create a modern, conversion-focused site with clean design and strong calls-to-action.
+Brand Guidelines
+
+Company: Flexpandas
+Domain: flexpandas.com
+Tagline: "Work smarter, not harder"
+Mascot: Friendly panda (use simple panda emoji/icon throughout)
+Colors: Use a professional palette with panda-themed accents (blacks, whites, greens)
+Tone: Professional but friendly, approachable but confident
+
+Technical Requirements
+
+Responsive design (mobile-first)
+Fast loading times
+Clean, modern layout
+Contact forms that work
+Smooth scrolling navigation
+SEO-optimized structure
+
+Page Structure
+1. Homepage (/index.html)
+Hero Section
+
+Headline: "We save businesses 20+ hours every month with AI & automation."
+Subheadline: "Stop wasting time on repetitive tasks. From lead follow-up to client onboarding, Flexpandas builds smart systems that run your business on autopilot — so you can focus on growth."
+Primary CTA: "Book a Free Audit"
+Secondary CTA: "See How It Works" (scroll to next section)
+Visual: Placeholder for workflow demo video + small panda icon
+
+Problem Section
+
+Header: "Still stuck doing things manually?"
+4 pain points with icons:
+
+Leads slipping through the cracks
+Hours lost copying data between tools
+Inconsistent client follow-up
+No clear visibility on performance
+
+
+Promise: "With Flexpandas, your systems never forget, never miss a follow-up, and never waste a minute."
+
+How It Works (3-step process)
+
+Step 1 - Audit: We map your current workflow and uncover quick wins
+Step 2 - Build: We design and launch automations using tools like Make, HubSpot, Pipedrive, and AI chatbots
+Step 3 - Care: We monitor, maintain, and optimize so your systems keep running smoothly
+CTA: "Book My Free Audit"
+
+Services Overview
+Three service cards:
+
+Automation & AI (Flagship)
+
+Workflow automation (CRM, lead routing, email, onboarding)
+AI chatbots for lead qualification & FAQs
+KPI dashboards & reporting
+Projects from €1,500
+
+
+Design-as-a-Subscription
+
+Unlimited design requests each month
+Logos, social posts, landing pages, app/UI
+Flat monthly fee, no surprises
+From €700/month
+
+
+Video Editing-as-a-Subscription
+
+Short-form (Reels/TikTok/YouTube Shorts)
+Long-form edits with captions & thumbnails
+Perfect for creators & brands scaling content
+From €600/month
+
+
+
+CTA: "See Packages & Pricing"
+Social Proof
+
+Header: "Real impact, fast results."
+Testimonials:
+
+"Flexpandas helped us automate our lead flow and follow-ups — we saved 22 hours/month and closed more deals."
+"Instead of hiring in-house designers, we get all our creative assets done quickly on a fixed budget."
+
+
+
+Why Choose Flexpandas (4 points with icons)
+
+Friendly, flexible team that adapts to your tools
+Simple, clear deliverables (no jargon, no overwhelm)
+Affordable, transparent pricing
+SMB specialists helping creators, agencies, and DTC brands grow faster
+
+Final CTA
+
+Header: "Ready to stop wasting time and start scaling?"
+Subtext: "Book a free 15-minute audit call and let's show you where automation can save you hours every week."
+CTA: "Book My Free Audit"
+
+2. Pricing Page (/pricing.html)
+Header
+
+Headline: "Simple, transparent pricing. Choose what fits your business today."
+Subheadline: "No hidden fees. No long contracts. Just clear packages that save you time and help you grow."
+Tool logos strip: Make.com | HubSpot | Pipedrive | Figma | CapCut
+
+Section 1: Automation Packages
+Title: "Automation & AI — Build once, save forever."
+Three pricing cards side-by-side:
+
+Starter – "Quick Wins" (€1,500)
+
+Best for small teams wanting to save time fast
+Workflow audit (1-hour call + systems map)
+3 core automations
+1 dashboard
+2 weeks of post-launch support
+Timeline: 2 weeks
+CTA: "Start My Quick Wins"
+
+
+Core – "Growth Engine" (€4,500) - MOST POPULAR BADGE
+
+Best for businesses ready to scale and stop losing leads
+Workflow audit + strategy map
+6–8 custom automations
+1 AI chatbot
+2 dashboards
+4 weeks of post-launch support
+Timeline: 4 weeks
+CTA: "Build My Growth Engine"
+
+
+Scale – "Full Ops System" (€7,500–€9,000)
+
+Best for growing teams wanting automation across whole customer journey
+Deep-dive audit + full workflow blueprint
+10–12 advanced automations
+2 AI chatbots
+3 dashboards
+Training & documentation
+8 weeks of post-launch support
+Timeline: 6–8 weeks
+CTA: "Build My Ops System"
+
+
+
+Note below: "Need ongoing support? Add a Care Plan starting at €500/month."
+Section 2: Design Subscriptions
+Title: "On-demand design, whenever you need it."
+Three monthly pricing cards:
+
+Starter (€700/mo)
+
+1 active request at a time
+30 design hours/month
+Logos, social posts, ads, landing page sections
+48h turnaround per request
+
+
+Pro (€1,200/mo) - MOST POPULAR BADGE
+
+2 active requests at a time
+50 design hours/month
+Branding kits, website UI, app design, marketing campaigns
+24–48h turnaround per request
+Priority support
+
+
+Scale (€2,000/mo)
+
+3 active requests at a time
+80 design hours/month
+Complex design projects, multi-page app/web design
+24h turnaround per request
+Dedicated account manager
+
+
+
+Section 3: Video Subscriptions
+Title: "Video content at scale, without the editing headaches."
+Three monthly pricing cards:
+
+Starter (€600/mo)
+
+Up to 8 short-form videos/month
+Captions, basic edits, branded style
+72h turnaround
+
+
+Pro (€1,200/mo) - MOST POPULAR BADGE
+
+Up to 16 short-form videos/month + 1 long-form edit
+Captions, hooks, branded templates, thumbnail design
+48h turnaround
+Priority editing queue
+
+
+Scale (€2,000/mo)
+
+Up to 30 short-form videos/month + 2 long-form edits
+Captions, animations, hooks, custom thumbnails
+24–48h turnaround
+Dedicated editor & account manager
+
+
+
+Add-On Options
+
+Extra requests: €150 each
+Strategy call: €200 (30 min creative direction consult)
+Quarterly prepay discount: –10% when billed quarterly
+
+FAQ Section (collapsible)
+
+How fast is setup? (Automation projects typically 2–6 weeks depending on scope)
+What's included in "unlimited design requests"? (One active request at a time; queue system)
+Can I pause/cancel subscriptions? (Yes, cancel or pause anytime with 14 days' notice)
+Do I need to know any tools? (No, we handle everything end-to-end)
+
+Final CTA
+
+Header: "Ready to save time and scale faster?"
+Subtext: "Book a free 15-min audit call and let's find your quickest wins."
+CTA: "Book My Free Audit"
+
+3. About Page (/about.html)
+Main Content
+Title: "About Flexpandas"
+At Flexpandas, we believe small businesses and creators shouldn't waste time on work that software can do for them.
+We started as a small remote team helping brands with design projects — logos, websites, social media graphics. Over time, we noticed the same pattern: clients were drowning in repetitive tasks, struggling to keep up with leads, and spending more time managing tools than serving customers.
+So we expanded. Today, Flexpandas helps businesses save time and scale faster with:
+
+Automation & AI — systems that capture leads, follow up automatically, and run your business on autopilot
+Design Subscriptions — on-demand creative, without the cost of an in-house team
+Video Editing Subscriptions — consistent, branded content that keeps you visible everywhere
+
+Our team is small, flexible, and global — with automation experts, designers, and editors ready to plug in as your on-demand operations partner.
+Why the name Flexpandas?
+Because we're flexible like bamboo — and as reliable as a panda who always shows up.
+CTA: "Work smarter, not harder. Let's build systems that give you back your time." + "Book a Free Audit" button
+4. Contact Page (/contact.html)
+Header
+Title: "Get In Touch"
+Subtitle: "Ready to save 20+ hours every month? Let's talk about how Flexpandas can transform your business operations."
+Book Audit Section
+Header: "Book Your Free Audit"
+What to expect:
+
+15-minute friendly conversation (no sales pitch)
+Quick assessment of your current workflows
+2-3 specific automation opportunities we'd implement
+Clear next steps if you want to move forward
+CTA: "Book Free Audit Call"
+
+Contact Form Section
+Header: "Send Us a Message"
+Subtitle: "For general inquiries or questions:"
+Email: hello@flexpandas.com
+Response time: Within 24 hours
+Contact Form Fields:
+
+Name
+Email
+Business type
+Message
+Submit button
+
+Quick Start Section
+Header: "Not Sure Where to Start?"
+Choose your biggest pain point:
+
+"I'm losing leads" → Book automation audit
+"I need consistent design work" → Start with Design Starter (€700/month)
+"I need video content regularly" → Start with Video Starter (€600/month)
+"I'm not sure what I need" → Book free 15-min chat
+
+Resources Section
+Header: "Free Resources"
+Subtitle: "Learn before you buy:"
+
+Free Automation Checklist - 10 tasks you can automate today
+Weekly tutorials on TikTok, LinkedIn, and YouTube
+Template library - Free Make.com automation templates
+CTA: "Download Free Resources"
+
+Social Media Section
+Header: "Follow Our Journey"
+Platforms: TikTok | LinkedIn | YouTube | Instagram
+Content: Automation tutorials, behind-the-scenes, client success stories
+Navigation & Footer
+Main Navigation (all pages)
+
+Logo: Flexpandas + panda icon
+Menu: Services | Pricing | About | Contact
+CTA Button: "Book Free Audit"
+
+Footer (all pages)
+
+Links: Services | Pricing | About | Contact
+Social Media: TikTok | Instagram | LinkedIn | YouTube
+Tagline: "Weekly automation tutorials - learn before you buy"
+Copyright: "Flexpandas — Work smarter, not harder."
+Note: "We typically respond within 2-4 hours during business hours (9 AM - 6 PM CET)"
+
+Design Requirements
+Visual Style
+
+Clean, modern design with plenty of white space
+Professional color scheme with green/black accents for panda theme
+Consistent typography (readable, professional fonts)
+Subtle panda icon usage throughout (not overwhelming)
+Mobile-responsive design
+Fast loading times
+
+Interactive Elements
+
+Smooth hover effects on buttons and cards
+Animated CTA buttons
+Collapsible FAQ sections
+Smooth scrolling navigation
+Contact form validation
+"Most Popular" badges on middle-tier pricing cards
+
+Key CTAs to Emphasize
+
+"Book Free Audit" (primary action throughout site)
+"See Packages & Pricing" (secondary action)
+Service-specific CTAs on pricing page
+
+Trust Signals
+
+Tool integration logos (Make.com, HubSpot, Pipedrive, Figma, CapCut)
+Customer testimonials with realistic quotes
+Transparent pricing display
+Professional but friendly tone throughout
+
+Build this as a complete, functional website with working contact forms and smooth navigation between all pages.
