@@ -1,0 +1,614 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: hsl(0, 0%, 100%);
+  --foreground: hsl(222, 84%, 4.9%);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: hsl(222, 84%, 4.9%);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: hsl(222, 84%, 4.9%);
+  --primary: hsl(158, 64%, 52%);
+  --primary-foreground: hsl(210, 40%, 98%);
+  --secondary: hsl(210, 40%, 96%);
+  --secondary-foreground: hsl(222, 84%, 4.9%);
+  --muted: hsl(210, 40%, 96%);
+  --muted-foreground: hsl(215, 16.3%, 46.9%);
+  --accent: hsl(210, 40%, 96%);
+  --accent-foreground: hsl(222, 84%, 4.9%);
+  --destructive: hsl(0, 84.2%, 60.2%);
+  --destructive-foreground: hsl(210, 40%, 98%);
+  --border: hsl(214.3, 31.8%, 91.4%);
+  --input: hsl(214.3, 31.8%, 91.4%);
+  --ring: hsl(158, 64%, 52%);
+  --radius: 0.75rem;
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-serif: Georgia, serif;
+  --font-mono: Menlo, monospace;
+  --shadow-2xs: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00);
+  --shadow-xs: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00);
+  --shadow-sm: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00), 0px 1px 2px -1px hsl(158, 64%, 52% / 0.00);
+  --shadow: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00), 0px 1px 2px -1px hsl(158, 64%, 52% / 0.00);
+  --shadow-md: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00), 0px 2px 4px -1px hsl(158, 64%, 52% / 0.00);
+  --shadow-lg: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00), 0px 4px 6px -1px hsl(158, 64%, 52% / 0.00);
+  --shadow-xl: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00), 0px 8px 10px -1px hsl(158, 64%, 52% / 0.00);
+  --shadow-2xl: 0px 2px 0px 0px hsl(158, 64%, 52% / 0.00);
+  --spacing: 0.25rem;
+  --tracking-normal: 0em;
+}
+
+.dark {
+  --background: hsl(222, 84%, 4.9%);
+  --foreground: hsl(210, 40%, 98%);
+  --card: hsl(222, 84%, 4.9%);
+  --card-foreground: hsl(210, 40%, 98%);
+  --popover: hsl(222, 84%, 4.9%);
+  --popover-foreground: hsl(210, 40%, 98%);
+  --primary: hsl(158, 64%, 52%);
+  --primary-foreground: hsl(222, 84%, 4.9%);
+  --secondary: hsl(217, 32.6%, 17.5%);
+  --secondary-foreground: hsl(210, 40%, 98%);
+  --muted: hsl(217, 32.6%, 17.5%);
+  --muted-foreground: hsl(215, 20.2%, 65.1%);
+  --accent: hsl(217, 32.6%, 17.5%);
+  --accent-foreground: hsl(210, 40%, 98%);
+  --border: hsl(217, 32.6%, 17.5%);
+  --input: hsl(217, 32.6%, 17.5%);
+  --ring: hsl(158, 64%, 52%);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    box-shadow: 0 0 0 0 hsl(158, 64%, 52% / 0.4);
+  }
+  50% { 
+    box-shadow: 0 0 0 8px hsl(158, 64%, 52% / 0);
+  }
+}
+
+@keyframes subtle-bounce {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.02); }
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, hsl(158, 64%, 52% / 0.1) 0%, hsl(158, 64%, 52% / 0.05) 100%);
+}
+
+/* Micro-animations for conversion optimization */
+.pulse-glow {
+  animation: pulse-glow 2s infinite;
+}
+
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 10px 25px -5px hsl(0, 0%, 0% / 0.1), 0 10px 10px -5px hsl(0, 0%, 0% / 0.04);
+}
+
+.hover-scale {
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px hsl(158, 64%, 52% / 0.3);
+}
+
+.button-bounce {
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.button-bounce:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+.button-bounce:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 25px -5px hsl(0, 0%, 0% / 0.1), 0 10px 10px -5px hsl(0, 0%, 0% / 0.04);
+}
+
+.testimonial-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.testimonial-hover:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 15px 30px -10px hsl(158, 64%, 52% / 0.2);
+}
+
+.panda-option {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.panda-option:hover {
+  transform: translateX(8px) scale(1.02);
+  box-shadow: 0 8px 20px -5px hsl(158, 64%, 52% / 0.2);
+}
+
+/* Enhanced CTA spacing and visual hierarchy */
+.cta-primary {
+  @apply px-8 py-4 text-lg font-semibold rounded-xl shadow-lg;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-xl hover:scale-[1.02];
+  min-height: 56px;
+  line-height: 1.4;
+}
+
+.cta-secondary {
+  @apply px-6 py-3 text-base font-medium rounded-lg;
+  @apply transition-all duration-300 ease-out;
+  @apply hover:shadow-md hover:scale-[1.01];
+  min-height: 48px;
+  line-height: 1.4;
+}
+
+.cta-section {
+  @apply py-16 px-4 sm:px-6 lg:px-8;
+}
+
+.cta-container {
+  @apply max-w-4xl mx-auto text-center space-y-8;
+}
+
+.cta-text {
+  @apply text-xl sm:text-2xl text-muted-foreground leading-relaxed mb-8;
+}
+
+.cta-buttons {
+  @apply flex flex-col sm:flex-row gap-6 justify-center items-center;
+}
+
+.cta-buttons-stacked {
+  @apply flex flex-col gap-4 justify-center items-center;
+}
+
+/* ============================================================================ */
+/* GLOBAL CTA BUTTON SPACING STANDARDS - SYSTEMATIC SPACING FIX */
+/* ============================================================================ */
+
+/* Apply to all CTA buttons site-wide - FORCE OVERRIDE shadcn styles */
+.cta-button, .btn-primary, button.cta-button, a > button.cta-button, 
+button[data-testid*="button-"], [class*="button"] {
+  padding: 16px 32px !important;
+  border-radius: 8px !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  min-height: 44px !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: inline-flex !important;
+  white-space: normal !important;
+}
+
+/* MAXIMUM SPECIFICITY - Force all buttons to center */
+button, .btn, [class*="button"], 
+.inline-flex.items-center.justify-center,
+button[class*="bg-primary"] {
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+  display: inline-flex !important;
+}
+
+/* NAVIGATION BUTTON - Restore original small size */
+button[data-testid="button-book-audit"],
+button[data-testid="mobile-button-book-audit"] {
+  padding: 8px 12px !important;
+  font-size: 0.875rem !important;
+  min-height: 36px !important;
+  font-weight: 600 !important;
+}
+
+/* SPLIT-SCREEN COMPARISON STYLES */
+.comparison-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+.manual-panel, .automated-panel {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.manual-panel {
+  border: 2px solid #ef4444;
+  background: linear-gradient(135deg, #fef2f2 0%, #ffffff 100%);
+}
+
+.automated-panel {
+  border: 2px solid #10b981;
+  background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);
+}
+
+.panel-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.panel-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.time-badge {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.time-bad {
+  background: #fee2e2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.time-good {
+  background: #dcfce7;
+  color: #16a34a;
+  border: 1px solid #bbf7d0;
+}
+
+.step {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.step-manual {
+  background: rgba(239, 68, 68, 0.05);
+  border-left: 3px solid #ef4444;
+}
+
+.step-auto {
+  background: rgba(16, 185, 129, 0.05);
+  border-left: 3px solid #10b981;
+}
+
+.step-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.step-content strong {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #111827;
+}
+
+.step-content p {
+  color: #6b7280;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.comparison-cta {
+  text-align: center;
+  max-width: 600px;
+  margin: 1.5rem auto 0;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, hsl(var(--primary)/0.05) 0%, hsl(var(--primary)/0.1) 100%);
+  border-radius: 16px;
+  border: 1px solid hsl(var(--primary)/0.2);
+}
+
+.comparison-cta h4 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: hsl(var(--foreground));
+}
+
+.comparison-cta p {
+  color: hsl(var(--muted-foreground));
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .comparison-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+  
+  .manual-panel, .automated-panel {
+    padding: 1.5rem;
+  }
+  
+  .comparison-cta {
+    margin: 1.5rem auto 0;
+    padding: 1.5rem;
+  }
+}
+
+/* PRICING CARD CENTERING - Maximum specificity */
+.pricing-card-header, 
+div.pricing-card-header,
+.pricing-card-header > *,
+.pricing-card-header h3,
+.pricing-card-header div {
+  text-align: center !important;
+  display: block !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+/* PRICING SECTION ICONS - Force centering */
+.pricing-section-icon,
+div.pricing-section-icon {
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Centered standalone CTAs with width constraint */
+.cta-button--centered {
+  margin: 24px auto;
+  display: block !important;
+  max-width: 300px;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+/* Spacing above and below CTA buttons */
+.cta-button {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* When CTAs appear after text blocks - increased spacing for both direct and Link-wrapped buttons */
+p + .cta-button,
+p + a > .cta-button,
+p + a > button,
+.text-content + .cta-button,
+.text-content + a > .cta-button,
+.text-content + a > button {
+  margin-top: 2.5rem;
+}
+
+/* Additional spacing for CTAs after any text element */
+h1 + .cta-button,
+h1 + a > .cta-button,
+h1 + a > button,
+h2 + .cta-button,
+h2 + a > .cta-button,
+h2 + a > button,
+h3 + .cta-button,
+h3 + a > .cta-button,
+h3 + a > button,
+div > p + .cta-button,
+div > p + a > .cta-button,
+div > p + a > button {
+  margin-top: 2.5rem;
+}
+
+/* Mobile responsive spacing */
+@media (max-width: 768px) {
+  p + .cta-button,
+  p + a > .cta-button,
+  p + a > button,
+  .text-content + .cta-button,
+  .text-content + a > .cta-button,
+  .text-content + a > button,
+  h1 + .cta-button,
+  h1 + a > .cta-button,
+  h1 + a > button,
+  h2 + .cta-button,
+  h2 + a > .cta-button,
+  h2 + a > button,
+  h3 + .cta-button,
+  h3 + a > .cta-button,
+  h3 + a > button,
+  div > p + .cta-button,
+  div > p + a > .cta-button,
+  div > p + a > button {
+    margin-top: 1.5rem;
+  }
+}
+
+/* When multiple CTAs are grouped */
+.cta-group {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+/* Prevent margin stacking in grouped CTAs */
+.cta-group .cta-button {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ============================================================================ */
+/* "WHICH PANDA DO YOU NEED?" SECTION FIXES - IMMEDIATE PRIORITY */
+/* ============================================================================ */
+
+/* Fix the section container */
+.panda-selector-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Fix heading overflow with responsive clamp() */
+.panda-selector-section h2 {
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.2;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Fix subtitle spacing */
+.panda-selector-section p {
+  font-size: 1.1rem;
+  color: #6b7280;
+  text-align: center;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+/* Fix option cards - overriding existing styles AND shadcn Button defaults */
+.panda-option {
+  background: white;
+  border: 2px solid #f3f4f6;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  /* Override shadcn Button's inline-flex and nowrap */
+  display: block !important;
+  white-space: normal !important;
+  align-items: stretch !important;
+  justify-content: flex-start !important;
+  text-align: left !important;
+}
+
+.panda-option:hover {
+  border-color: #10b981;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(16, 185, 129, 0.15);
+}
+
+/* Fix content within each option */
+.panda-option-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.panda-option-icon {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.panda-option-text {
+  flex: 1;
+  min-width: 0;
+  word-wrap: break-word;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: auto;
+  white-space: normal;
+}
+
+.panda-option-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  max-width: 100%;
+}
+
+.panda-option-cta {
+  font-size: 1rem;
+  color: #10b981;
+  font-weight: 500;
+  text-decoration: none;
+  margin-top: 0.5rem;
+  display: block;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+/* ============================================================================ */
+/* MOBILE RESPONSIVENESS - ALL SPACING FIXES */
+/* ============================================================================ */
+
+@media (max-width: 768px) {
+  .cta-group {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .cta-button, .btn-primary {
+    max-width: 90%;
+    margin: 1.5rem auto;
+  }
+  
+  .panda-selector-section {
+    padding: 1.5rem 1rem;
+  }
+  
+  .panda-option {
+    margin: 0 0 1rem 0;
+    padding: 1.25rem;
+  }
+  
+  .panda-option-content {
+    gap: 0.75rem;
+  }
+  
+  .panda-option-title {
+    font-size: 1rem;
+    line-height: 1.4;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-sans antialiased bg-background text-foreground;
+  }
+}
