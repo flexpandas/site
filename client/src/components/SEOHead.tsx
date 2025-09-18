@@ -1,5 +1,5 @@
 import { Helmet } from "react-helmet-async";
-import logoUrl from "@assets/favicon_1757783065181.png";
+import logoUrl from "@assets/favicon.png";
 
 interface SEOHeadProps {
   title: string;

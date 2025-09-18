@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import logoUrl from "@assets/favicon_1757783065181.png";
+import logoUrl from "@assets/favicon.png";
 
 export default function Navigation() {
   const [location] = useLocation();

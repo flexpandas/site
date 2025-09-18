@@ -175,6 +175,7 @@ export default function Contact() {
                     variant="outline" 
                     className="cta-button w-full border-border text-foreground hover:bg-muted transition-colors"
                     data-testid="button-download-resources"
+                    onClick={() => window.open("https://www.notion.so/Flexpandas-Free-Resource-272b72b23edf80b68a3cec3c622a74ca?source=copy_link", "_blank")}
                   >
                     Download Free Resources
                   </Button>
