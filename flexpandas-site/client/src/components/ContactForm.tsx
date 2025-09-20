@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useMutation } from "@tanstack/react-query";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
@@ -8,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
+import { apiRequest } from "@/lib/queryClient";
 
 const contactFormSchema = z.object({
   name: z.string().min(1, "Name is required"),
@@ -21,7 +23,6 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 export default function ContactForm() {
   const { toast } = useToast();
   const [isSubmitted, setIsSubmitted] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -33,25 +34,13 @@ export default function ContactForm() {
     },
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    setIsSubmitting(true);
-    
-    try {
-      const formData = new FormData();
-      formData.append('name', data.name);
-      formData.append('email', data.email);
-      formData.append('businessType', data.businessType || '');
-      formData.append('message', data.message);
-
-      const response = await fetch('https://formspree.io/f/xandrlvd', {
-        method: 'POST',
-        body: formData,
-        headers: {
-          'Accept': 'application/json'
-        }
-      });
-
-      if (response.ok) {
+  const mutation = useMutation({
+    mutationFn: async (data: ContactFormData) => {
+      const response = await apiRequest("POST", "/api/contact", data);
+      return response.json();
+    },
+    onSuccess: (data) => {
+      if (data.success) {
         setIsSubmitted(true);
         form.reset();
         toast({
@@ -59,18 +48,25 @@ export default function ContactForm() {
           description: "We'll get back to you within 24 hours.",
         });
       } else {
-        throw new Error('Failed to send message');
+        toast({
+          title: "Error sending message",
+          description: data.message || "Please try again later.",
+          variant: "destructive",
+        });
       }
-    } catch (error) {
+    },
+    onError: (error) => {
       console.error("Contact form error:", error);
       toast({
         title: "Error sending message",
         description: "Please try again later or contact us directly at hello@flexpandas.com",
         variant: "destructive",
       });
-    } finally {
-      setIsSubmitting(false);
-    }
+    },
+  });
+
+  const onSubmit = (data: ContactFormData) => {
+    mutation.mutate(data);
   };
 
   if (isSubmitted) {
@@ -197,10 +193,10 @@ export default function ContactForm() {
           <Button 
             type="submit" 
             className="w-full bg-primary text-primary-foreground hover:bg-primary/90 transition-colors"
-            disabled={isSubmitting}
+            disabled={mutation.isPending}
             data-testid="button-submit-contact"
           >
-            {isSubmitting ? "Sending..." : "Send Message"}
+            {mutation.isPending ? "Sending..." : "Send Message"}
           </Button>
         </form>
       </Form>
